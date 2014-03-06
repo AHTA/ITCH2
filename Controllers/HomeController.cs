@@ -13,6 +13,7 @@ namespace ITCH2_1.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.ServidorImagenes = ITCH2_1.Properties.Settings.Default.ServidorImagenes;
             return View();
         }
 

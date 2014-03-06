@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ServidorImagenes" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://localhost/ImagenesSitio/</Value>
+      <Value Profile="(Default)">http://localhost/ImagenesSitioWeb/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

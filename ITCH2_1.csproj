@@ -263,17 +263,14 @@
     <Content Include="Views\Shared\WebParts\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\_Slider.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Shared\WebParts\_Social.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\WebParts\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="font\fontawesome-webfont.woff" />
-    <None Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\fontawesome-webfont.ttf" />
     <Content Include="Views\Aspirantes\Index.cshtml" />
     <Content Include="Views\Alumnos\Index.cshtml" />
     <Content Include="Views\Docentes\Index.cshtml" />
@@ -326,7 +323,7 @@
     <Content Include="font\trajan_pro_regular-webfont.ttf" />
     <None Include="Properties\PublishProfiles\ITCH2 Publish.pubxml" />
     <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>

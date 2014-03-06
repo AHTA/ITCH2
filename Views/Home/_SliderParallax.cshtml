@@ -1,4 +1,5 @@
-﻿@{
+﻿@using System.Configuration;
+@{
     ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
     var paginas = db.Pages.Where
         (pag =>
@@ -7,7 +8,7 @@
             pag.page_visible == true
         )
         .OrderByDescending(pag => pag.page_date)
-        .Take(5);
+        .Take(5);        
 }
 <div class="container">
     <div class="row">
@@ -28,7 +29,7 @@
                                 Leer m&aacute;s
                             </a>
                             <div class="da-img">
-                                <img src="@Url.Content("~/img/parallax/2.png")" alt="image02" />
+                                <img src="@(ViewBag.ServidorImagenes + pagina.page_image)" alt="image02" />
                             </div>
                         </div>
                     </div>
