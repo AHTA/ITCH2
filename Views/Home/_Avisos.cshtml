@@ -1,0 +1,54 @@
+﻿<div class="service-three">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Service title with tag -->
+            <h6 class="bold grey">
+                Importante</h6>
+            <h3>
+                Avisos</h3>
+            <p>
+                Lo m&aacute;s importante para los usuarios de esta p&aacute;gina.</p>
+            <a href="#">Ver todos <i class="icon-double-angle-right"></i></a>
+            <hr />
+        </div>
+        <div class="col-md-8">
+
+        @{
+            ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+            var paginas = db.Pages.Where
+                (pag =>
+                    pag.Categories.FirstOrDefault().category_name == "Avisos"
+                    &&
+                    pag.page_visible == true
+                )
+                .OrderByDescending(pag => pag.page_date)
+                .Take(4);
+            int hrCount = 0;
+        }
+
+        @foreach (var aviso in paginas)
+        {
+            hrCount++;
+                        
+            <!-- Aviso/ -->
+            <div class="service-icon gray">
+                <i class="icon-exclamation-sign"></i>
+            </div>
+            <div class="service-content">
+                <h5>
+                    <a href="@Url.Action("Publicacion", "Contenido", new { id = aviso.page_id })">@aviso.page_title</a></h5>
+                    <span>@aviso.page_date.ToShortDateString()</span>
+                <p>@aviso.page_description</p>
+            </div>
+            
+            if (hrCount < 4)
+            { <hr /> }
+            
+            <!-- /Aviso -->
+        }
+            <br />
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</div>

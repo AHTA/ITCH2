@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Aspirantes";
+}
+
+
+<div class="container" style="text-align:justify;">
+    <div class="row lp">
+        <div class="col-md-12">
+            <div class="center">
+                <h2>
+                    Aspirantes
+                </h2>
+                <p class="big grey">
+                    Bienvenido al Instituto Tecnol&oacute;gico de Chihuahua II.
+                </p>
+                <!-- Image -->
+                <div class="lp-image">
+                    <a href="#">
+                        <img src="img/photos/Aspirantes.jpg" alt="" class="img-responsive" />
+                    </a>
+                </div>
+                <!-- Button -->
+                <div class="button">
+                    <a href="#" onclick="window.open('http://eepurl.com/Mnnzv', 'nuevo', 'directories=no, location=no, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=400, height=400')"><i class="icon-mail-reply"></i> Recibe notificaciones</a> &nbsp; 
+                    <a href="https://twitter.com/_itchihuahuaii"><i class="icon-twitter-sign"></i> Siguenos en Twitter</a>
+                </div>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h4>
+                        ¿Est&aacute;s a punto de entrar a la universidad y no sabes qu&eacute; carrera estudiar?
+                    </h4>
+                    <p>
+                        ¡El ITChII, tiene excelentes oportunidades para ti!
+
+                    </p>
+                    <br />
+                    <p>
+                        Adem&aacute;s de ofrecerte el plan de estudios de la carrera te ofrece otros beneficios.
+                        Por ejemplo puedes crear tu empresa y hacerla crecer, gracias a la incubadora de
+                        empresas la cual te brinda toda la asesoria profesional que necesitas para emprender tu negocio.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- Noticias para aspirantes/ -->
+    @Html.Partial("_AspirantesNoticias")
+    <!-- /Noticias para aspirantes -->
+</div>

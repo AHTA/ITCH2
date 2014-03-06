@@ -1,0 +1,14 @@
+﻿<div class="widget">
+    <h4>
+        Publicaciones recientes</h4>
+    <ul>
+        @{
+            ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+            var paginas = db.Pages.OrderByDescending(item => item.page_id).Take(5);
+        }
+        @foreach (var item in paginas)
+        {
+            <li><a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })">@item.page_title</a></li>
+        }
+    </ul>
+</div>

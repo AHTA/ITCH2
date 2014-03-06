@@ -1,0 +1,72 @@
+﻿<header>
+    <div class="container">
+
+        <!-- Navegacion alternativa/ -->
+        <div class="row">
+            <div class=" col-md-offset-1 col-md-8 text-right alternativeNav">
+                <a href="#">INICIO</a> | 
+                <a href="#">INSTITUTOS TECNOL&Oacute;GICOS</a> | 
+                <a href="#">MAPA DEL SITIO</a> | 
+                <a href="#">CONTACTO</a>
+                
+            </div>
+            <div class="col-md-3">
+                <form action="@Url.Action("Busqueda", "Contenido" )" method="get" class="search-form" id="search-form">
+                    <input type="text" name="id" placeholder="Buscar" title="Ingresa tu búsqueda">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+        <!-- /Navegacion alternativa -->
+
+        <div class="row">
+            <!-- Logo SEP/ -->
+            <div class="col-md-4 col-sm-2 hidden-xs hidden-sm">
+                <div class="logo">
+                    <img src="@Url.Content("~/img/logos/logoSEP_hoz.png")" width="286"  />
+                    <div class="hmeta">&nbsp;</div>
+                </div>
+            </div>
+            <!-- /Logo SEP -->
+
+            <!-- Nombre Tec2/ -->
+            <div class="col-md-4 col-sm-2 text-center">
+                <h1 id="NombreTec">INSTITUTO TECNOL&Oacute;GICO DE CHIHUAHUA II</h1>
+            </div>
+            <!-- /Nombre Tec2 -->
+            
+            <!-- Logo Tecs/ -->
+            <div class="col-md-2 col-sm-2 text-center hidden-xs hidden-sm">
+                <div class="logosTEC">
+                    <a href="@Url.Action("Index","Home")">
+                        <img src="@Url.Content("~/img/logos/sep.jpg")" height="60" style="padding-left:10px;" />
+                    </a>
+                    <div class="hmeta">&nbsp;</div>
+                </div>
+            </div>
+            <!-- //Logo Tecs-->
+
+            <!-- Logo Tec2/ -->
+            <div class="col-md-2 col-sm-2 text-center hidden-xs hidden-sm">
+                <div class="logosTEC">
+                    <a href="@Url.Action("Index","Home")">
+                        <img src="@Url.Content("~/img/logos/logoITCH2gris.jpg")" height="60" style="padding-left:10px;" />
+                    </a>
+                    <div class="hmeta">&nbsp;</div>
+                </div>
+            </div>
+            <!-- //Logo Tec2-->
+
+            @*<div class="col-md-5  col-sm-6 ">
+
+            <form class="form-inline" role="form" method="get" action="@Url.Action("Busqueda", "Contenido" )">
+                <div class="form-group">
+                    <input name="id" type="text" class="form-control" id="search" placeholder="Escribe algo...">
+                </div>
+                <button type="submit" class="btn btn-default">Buscar</button>
+            </form>
+
+            </div>*@
+        </div>
+    </div>
+</header>

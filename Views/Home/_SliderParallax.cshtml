@@ -1,0 +1,46 @@
+﻿@{
+    ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+    var paginas = db.Pages.Where
+        (pag =>
+            pag.Categories.FirstOrDefault().category_name == "Portada"
+            &&
+            pag.page_visible == true
+        )
+        .OrderByDescending(pag => pag.page_date)
+        .Take(5);
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div id="da-slider" class="da-slider">
+
+                @foreach (var pagina in paginas)
+            {
+                <!-- Noticia/ -->
+                    <div class="da-slide">
+                        <div class="da-blue">
+                            <h2>
+                                <span>@pagina.page_title</span>
+                            </h2>
+                            <p>@pagina.page_description</p>
+                            <a href="@Url.Action("Publicacion", "Contenido", new { id = pagina.page_id })" class="da-link">
+                                Leer m&aacute;s
+                            </a>
+                            <div class="da-img">
+                                <img src="@Url.Content("~/img/parallax/2.png")" alt="image02" />
+                            </div>
+                        </div>
+                    </div>
+                <!-- /Noticia-->
+            }
+
+                <nav class="da-arrows">
+                    <span class="da-arrows-prev"></span>
+                    <span class="da-arrows-next"></span>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@{
+    ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+    var paginas = db.Pages.Where
+        (pag =>
+            pag.Categories.FirstOrDefault().category_name == "Egresados"
+            &&
+            pag.page_visible == true
+        )
+        .OrderByDescending(pag => pag.page_date)
+        .Take(2);
+}
+
+
+
+<div class="testimonial">
+    <div class="row">
+        <div class="center">
+            <h3>Noticias</h3>
+            <p class="big grey">
+                Ultimas noticias para egresados (<span class="color"><a href="#">ver m&aacute;s</a></span>).
+            </p>
+        </div>
+        @foreach (var noticia in paginas)
+        {
+            <div class="col-md-6">
+            <blockquote>
+                <span class="color">@noticia.page_title</span>
+                <p>
+                    @noticia.page_description
+                </p>
+                <small>@noticia.UserProfiles.PublicUserName - <span class="color">@noticia.page_date</span></small>
+            </blockquote>
+        </div>
+        }
+        
+        
+    </div>
+</div>

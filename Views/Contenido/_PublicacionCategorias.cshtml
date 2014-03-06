@@ -1,0 +1,16 @@
+﻿@{
+    ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+}
+<div class="widget">
+    <h4>
+        Categorias</h4>
+    <ul>
+        @{
+            var categorias = db.Categories.OrderByDescending(item => item.category_id);
+        }
+        @foreach (var item in categorias)
+        {
+            <li><a href="#">@item.category_name</a></li>
+        }
+    </ul>
+</div>

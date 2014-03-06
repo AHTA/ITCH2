@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ITCH2_1.Models.Pages>
+
+@{
+    ViewBag.Title = "Busqueda";
+}
+
+<div class="content">
+    <div class="container">
+        <h2>Busqueda</h2>
+        <p class="big grey">Resultados de la busqueda.</p>
+        <hr>
+
+        <div class="row tasks">
+            @if (Model != null || Model.Count() > 0)
+            {
+                foreach (var item in Model)
+                {
+                    <div class="col-md-12">
+                        <div class="task">
+                            <h6><a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })">@item.page_title</a></h6>
+                            <div class="tmeta">
+                                <i class="icon-calendar"></i> @item.page_date - <i class="icon-folder-open"></i>
+                                @foreach (var categoria in item.Categories)
+                                { <a href="#">@categoria.category_name</a> } 
+                            </div>
+                            <p>@item.page_description</p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-md-12">
+                    <p class="big grey">No se encontraron resultados para esta busqueda...</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

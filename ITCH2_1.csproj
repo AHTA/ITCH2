@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D1C0F8D-6809-4445-8526-6A5C07C96E7A}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITCH2_1</RootNamespace>
+    <AssemblyName>ITCH2_1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AcercaDeController.cs" />
+    <Compile Include="Controllers\AlumnosController.cs" />
+    <Compile Include="Controllers\AspirantesController.cs" />
+    <Compile Include="Controllers\CarrerasController.cs" />
+    <Compile Include="Controllers\ContactoController.cs" />
+    <Compile Include="Controllers\ContenidoController.cs" />
+    <Compile Include="Controllers\DepartamentosController.cs" />
+    <Compile Include="Controllers\DocentesController.cs" />
+    <Compile Include="Controllers\EgresadosController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiwasEngineModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiwasEngineModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\aspnet-ChiwasEngine.mdf" />
+    <Content Include="App_Data\aspnet-ChiwasEngine_log.ldf">
+      <DependentUpon>aspnet-ChiwasEngine.mdf</DependentUpon>
+    </Content>
+    <Content Include="img\bg-01.jpg" />
+    <Content Include="img\border-01.png" />
+    <Content Include="img\carreras\Image1.jpg" />
+    <Content Include="img\carreras\Image10.jpg" />
+    <Content Include="img\carreras\Image11.jpg" />
+    <Content Include="img\carreras\Image12.jpg" />
+    <Content Include="img\carreras\Image13.jpg" />
+    <Content Include="img\carreras\Image2.jpg" />
+    <Content Include="img\carreras\Image3.jpg" />
+    <Content Include="img\carreras\Image4.jpg" />
+    <Content Include="img\carreras\Image5.jpg" />
+    <Content Include="img\carreras\Image6.jpg" />
+    <Content Include="img\carreras\Image7.jpg" />
+    <Content Include="img\carreras\Image8.jpg" />
+    <Content Include="img\carreras\Image9.jpg" />
+    <Content Include="img\line-01.gif" />
+    <Content Include="img\logos\Logo64x64.jpg" />
+    <Content Include="img\logos\logoITCH2gris.jpg" />
+    <Content Include="img\logos\logoSEP_hoz.png" />
+    <Content Include="img\logos\sep.jpg" />
+    <Content Include="img\photos\alumno.jpg" />
+    <Content Include="img\photos\aspirante.jpg" />
+    <Content Include="img\photos\docente.jpg" />
+    <Content Include="img\photos\egresado.jpg" />
+    <Content Include="img\photos\egresados.jpg" />
+    <Content Include="img\sprites.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.html" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="img\logos\logo.jpg" />
+    <Content Include="img\logos\logo2.jpg" />
+    <Content Include="img\photos\Alumnos.jpg" />
+    <Content Include="img\bg_direction_nav.png" />
+    <Content Include="img\border-l.png" />
+    <Content Include="img\dots.png" />
+    <Content Include="img\favicon\favicon.png" />
+    <Content Include="img\parallax\1.png" />
+    <Content Include="img\parallax\2.png" />
+    <Content Include="img\parallax\3.png" />
+    <Content Include="img\parallax\4.png" />
+    <Content Include="img\parallax\arrows.png" />
+    <Content Include="img\photos\1.jpg" />
+    <Content Include="img\photos\2.jpg" />
+    <Content Include="img\photos\3.jpg" />
+    <Content Include="img\photos\4.jpg" />
+    <Content Include="img\photos\5.jpg" />
+    <Content Include="img\photos\Aspirantes.jpg" />
+    <Content Include="img\photos\Docentes.jpg" />
+    <Content Include="img\photos\s1.jpg" />
+    <Content Include="img\photos\s2.jpg" />
+    <Content Include="img\photos\s3.jpg" />
+    <Content Include="img\photos\site.jpg" />
+    <Content Include="img\photos\tn_1.jpg" />
+    <Content Include="img\photos\tn_2.jpg" />
+    <Content Include="img\photos\tn_3.jpg" />
+    <Content Include="img\photos\tn_4.jpg" />
+    <Content Include="img\photos\tn_5.jpg" />
+    <Content Include="img\portfolio\1.jpg" />
+    <Content Include="img\portfolio\2.jpg" />
+    <Content Include="img\portfolio\3.jpg" />
+    <Content Include="img\portfolio\4.jpg" />
+    <Content Include="img\portfolio\5.jpg" />
+    <Content Include="img\portfolio\6.jpg" />
+    <Content Include="img\portfolio\7.jpg" />
+    <Content Include="img\portfolio\8.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\cycle.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\filter.js" />
+    <Content Include="js\jquery.cslider.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.isotope.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\modernizr.custom.28468.js" />
+    <Content Include="style\bootstrap.css" />
+    <Content Include="style\flexslider.css" />
+    <Content Include="style\font-awesome.css" />
+    <Content Include="style\oficial.css" />
+    <Content Include="style\prettyPhoto.css" />
+    <Content Include="style\slider.css" />
+    <Content Include="style\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\WebParts\_NavigationBar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\WebParts\_Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\_Slider.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\WebParts\_Social.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\WebParts\_Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="font\fontawesome-webfont.woff" />
+    <None Include="font\fontawesome-webfont.ttf" />
+    <Content Include="Views\Aspirantes\Index.cshtml" />
+    <Content Include="Views\Alumnos\Index.cshtml" />
+    <Content Include="Views\Docentes\Index.cshtml" />
+    <Content Include="Views\Contacto\Index.cshtml" />
+    <Content Include="Views\Departamentos\Index.cshtml" />
+    <Content Include="Views\Departamentos\SistemasComputacionales.cshtml" />
+    <Content Include="Views\Departamentos\CienciasBasicas.cshtml" />
+    <Content Include="Views\Departamentos\IngenieriaIndustrial.cshtml" />
+    <Content Include="Views\Departamentos\CienciasEconomicoAdministrativas.cshtml" />
+    <Content Include="Views\Departamentos\CienciasTierra.cshtml" />
+    <Content Include="Views\Departamentos\ServiciosEscolares.cshtml" />
+    <Content Include="Views\Departamentos\DivisionEstudiosProfesionales.cshtml" />
+    <Content Include="Views\Departamentos\GestionTecnologicaVinculacion.cshtml" />
+    <Content Include="Views\Departamentos\RecursosFinancieros.cshtml" />
+    <Content Include="Views\Departamentos\CentroInformacion.cshtml" />
+    <Content Include="Views\Departamentos\Laboratorios.cshtml" />
+    <Content Include="Views\Departamentos\ActividadesExtraescolares.cshtml" />
+    <Content Include="Views\Contenido\Publicacion.cshtml" />
+    <Content Include="Mvc.sitemap" />
+    <Content Include="Views\Home\_Secciones.cshtml" />
+    <Content Include="Views\Home\_Noticias.cshtml" />
+    <Content Include="Views\Home\_Avisos.cshtml" />
+    <Content Include="Views\Home\_Servicios.cshtml" />
+    <Content Include="Views\Home\_Categorias.cshtml" />
+    <Content Include="Views\Home\_SliderParallax.cshtml" />
+    <EntityDeploy Include="Models\ChiwasEngineModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ChiwasEngineModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Views\Carreras\ISC.cshtml" />
+    <Content Include="Views\Carreras\ARQ.cshtml" />
+    <Content Include="Views\Carreras\LI.cshtml" />
+    <Content Include="Views\Carreras\LA.cshtml" />
+    <Content Include="Views\Carreras\IGE.cshtml" />
+    <Content Include="Views\Carreras\IINF.cshtml" />
+    <Content Include="Views\Carreras\II.cshtml" />
+    <Content Include="Views\AcercaDe\Index.cshtml" />
+    <Content Include="Views\Contenido\_PublicacionCategorias.cshtml" />
+    <Content Include="Views\Contenido\_PublicacionRecientes.cshtml" />
+    <Content Include="Views\AcercaDe\MisionVision.cshtml" />
+    <Content Include="Views\AcercaDe\Logotipo.cshtml" />
+    <Content Include="Views\Aspirantes\_AspirantesNoticias.cshtml" />
+    <Content Include="Views\Contenido\Busqueda.cshtml" />
+    <Content Include="Views\Alumnos\_AlumnosNoticias.cshtml" />
+    <Content Include="Views\Docentes\_DocentesNoticias.cshtml" />
+    <Content Include="Views\Egresados\Index.cshtml" />
+    <Content Include="Views\Egresados\_EgresadosNoticias.cshtml" />
+    <Content Include="font\trajan_pro_regular-webfont.woff" />
+    <Content Include="font\trajan_pro_regular-webfont.eot" />
+    <Content Include="font\trajan_pro_regular-webfont.ttf" />
+    <None Include="Properties\PublishProfiles\ITCH2 Publish.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7694</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

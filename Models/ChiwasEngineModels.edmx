@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Categories" EntityType="Model.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pages" EntityType="Model.Store.Pages" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PagesCategories" EntityType="Model.Store.PagesCategories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfiles" EntityType="Model.Store.UserProfiles" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId" Association="Model.Store.FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId">
+            <End Role="UserProfiles" EntitySet="UserProfiles" />
+            <End Role="Pages" EntitySet="Pages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_PagesCategories_dbo_Categories_Categories_category_id" Association="Model.Store.FK_dbo_PagesCategories_dbo_Categories_Categories_category_id">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="PagesCategories" EntitySet="PagesCategories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_PagesCategories_dbo_Pages_Pages_page_id" Association="Model.Store.FK_dbo_PagesCategories_dbo_Pages_Pages_page_id">
+            <End Role="Pages" EntitySet="Pages" />
+            <End Role="PagesCategories" EntitySet="PagesCategories" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="category_name" Type="nvarchar(max)" />
+          <Property Name="category_description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Pages">
+          <Key>
+            <PropertyRef Name="page_id" />
+          </Key>
+          <Property Name="page_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="page_date" Type="datetime" Nullable="false" />
+          <Property Name="page_content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="page_description" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="page_title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="page_modified" Type="datetime" Nullable="false" />
+          <Property Name="page_visible" Type="bit" Nullable="false" />
+          <Property Name="page_image" Type="nvarchar(max)" />
+          <Property Name="UserProfile_UserId" Type="int" />
+        </EntityType>
+        <EntityType Name="PagesCategories">
+          <Key>
+            <PropertyRef Name="Pages_page_id" />
+            <PropertyRef Name="Categories_category_id" />
+          </Key>
+          <Property Name="Pages_page_id" Type="int" Nullable="false" />
+          <Property Name="Categories_category_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfiles">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="PublicUserName" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId">
+          <End Role="UserProfiles" Type="Model.Store.UserProfiles" Multiplicity="0..1" />
+          <End Role="Pages" Type="Model.Store.Pages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfiles">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Pages">
+              <PropertyRef Name="UserProfile_UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_PagesCategories_dbo_Categories_Categories_category_id">
+          <End Role="Categories" Type="Model.Store.Categories" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PagesCategories" Type="Model.Store.PagesCategories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="category_id" />
+            </Principal>
+            <Dependent Role="PagesCategories">
+              <PropertyRef Name="Categories_category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_PagesCategories_dbo_Pages_Pages_page_id">
+          <End Role="Pages" Type="Model.Store.Pages" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PagesCategories" Type="Model.Store.PagesCategories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pages">
+              <PropertyRef Name="page_id" />
+            </Principal>
+            <Dependent Role="PagesCategories">
+              <PropertyRef Name="Pages_page_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="Model.Categories" />
+          <EntitySet Name="Pages" EntityType="Model.Pages" />
+          <EntitySet Name="UserProfiles" EntityType="Model.UserProfiles" />
+          <AssociationSet Name="FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId" Association="Model.FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId">
+            <End Role="UserProfiles" EntitySet="UserProfiles" />
+            <End Role="Pages" EntitySet="Pages" />
+          </AssociationSet>
+          <AssociationSet Name="PagesCategories" Association="Model.PagesCategories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Pages" EntitySet="Pages" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="category_id" />
+          </Key>
+          <Property Name="category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="category_name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="category_description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Pages" Relationship="Model.PagesCategories" FromRole="Categories" ToRole="Pages" />
+        </EntityType>
+        <EntityType Name="Pages">
+          <Key>
+            <PropertyRef Name="page_id" />
+          </Key>
+          <Property Name="page_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="page_date" Type="DateTime" Nullable="false" />
+          <Property Name="page_content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="page_description" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="page_title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="page_modified" Type="DateTime" Nullable="false" />
+          <Property Name="page_visible" Type="Boolean" Nullable="false" />
+          <Property Name="page_image" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="UserProfile_UserId" Type="Int32" />
+          <NavigationProperty Name="UserProfiles" Relationship="Model.FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId" FromRole="Pages" ToRole="UserProfiles" />
+          <NavigationProperty Name="Categories" Relationship="Model.PagesCategories" FromRole="Pages" ToRole="Categories" />
+        </EntityType>
+        <EntityType Name="UserProfiles">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PublicUserName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Pages" Relationship="Model.FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId" FromRole="UserProfiles" ToRole="Pages" />
+        </EntityType>
+        <Association Name="FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId">
+          <End Role="UserProfiles" Type="Model.UserProfiles" Multiplicity="0..1" />
+          <End Role="Pages" Type="Model.Pages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfiles">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Pages">
+              <PropertyRef Name="UserProfile_UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PagesCategories">
+          <End Role="Categories" Type="Model.Categories" Multiplicity="*" />
+          <End Role="Pages" Type="Model.Pages" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="Model.Categories">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="category_name" ColumnName="category_name" />
+                <ScalarProperty Name="category_description" ColumnName="category_description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pages">
+            <EntityTypeMapping TypeName="Model.Pages">
+              <MappingFragment StoreEntitySet="Pages">
+                <ScalarProperty Name="page_id" ColumnName="page_id" />
+                <ScalarProperty Name="page_date" ColumnName="page_date" />
+                <ScalarProperty Name="page_content" ColumnName="page_content" />
+                <ScalarProperty Name="page_description" ColumnName="page_description" />
+                <ScalarProperty Name="page_title" ColumnName="page_title" />
+                <ScalarProperty Name="page_modified" ColumnName="page_modified" />
+                <ScalarProperty Name="page_visible" ColumnName="page_visible" />
+                <ScalarProperty Name="page_image" ColumnName="page_image" />
+                <ScalarProperty Name="UserProfile_UserId" ColumnName="UserProfile_UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserProfiles">
+            <EntityTypeMapping TypeName="Model.UserProfiles">
+              <MappingFragment StoreEntitySet="UserProfiles">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PublicUserName" ColumnName="PublicUserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="PagesCategories" TypeName="Model.PagesCategories" StoreEntitySet="PagesCategories">
+            <EndProperty Name="Categories">
+              <ScalarProperty Name="category_id" ColumnName="Categories_category_id" />
+            </EndProperty>
+            <EndProperty Name="Pages">
+              <ScalarProperty Name="page_id" ColumnName="Pages_page_id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ChiwasEngineModels">
+        <EntityTypeShape EntityType="Model.Categories" Width="1.5" PointX="0.75" PointY="1.625" Height="1.7879850260416672" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Pages" Width="1.5" PointX="3" PointY="1" Height="3.1340950520833331" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserProfiles" Width="1.5" PointX="0.75" PointY="5.5" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_Pages_dbo_UserProfiles_UserProfile_UserId" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="6.4901432291666667" />
+          <ConnectorPoint PointX="3.75" PointY="6.4901432291666667" />
+          <ConnectorPoint PointX="3.75" PointY="4.1340950520833335" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.PagesCategories" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.5189925130208337" />
+          <ConnectorPoint PointX="3" PointY="2.5189925130208337" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
