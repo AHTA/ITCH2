@@ -4,10 +4,10 @@
         <!-- Navegacion alternativa/ -->
         <div class="row">
             <div class=" col-md-offset-1 col-md-8 text-right alternativeNav">
-                <a href="#">INICIO</a> | 
+                <a href="@Url.Action("Index","Home")">INICIO</a> | 
                 <a href="#">INSTITUTOS TECNOL&Oacute;GICOS</a> | 
                 <a href="#">MAPA DEL SITIO</a> | 
-                <a href="#">CONTACTO</a>
+                <a href="@Url.Action("Index","Contacto")">CONTACTO</a>
                 
             </div>
             <div class="col-md-3">
@@ -31,7 +31,7 @@
 
             <!-- Nombre Tec2/ -->
             <div class="col-md-4 col-sm-2 text-center">
-                <h1 id="NombreTec">INSTITUTO TECNOL&Oacute;GICO DE CHIHUAHUA II</h1>
+                <h1 id="NombreTec"><a href="@Url.Action("Index", "Home")">INSTITUTO TECNOL&Oacute;GICO DE CHIHUAHUA II</a></h1>
             </div>
             <!-- /Nombre Tec2 -->
             
@@ -56,17 +56,6 @@
                 </div>
             </div>
             <!-- //Logo Tec2-->
-
-            @*<div class="col-md-5  col-sm-6 ">
-
-            <form class="form-inline" role="form" method="get" action="@Url.Action("Busqueda", "Contenido" )">
-                <div class="form-group">
-                    <input name="id" type="text" class="form-control" id="search" placeholder="Escribe algo...">
-                </div>
-                <button type="submit" class="btn btn-default">Buscar</button>
-            </form>
-
-            </div>*@
         </div>
     </div>
 </header>

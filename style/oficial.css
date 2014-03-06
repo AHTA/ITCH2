@@ -242,6 +242,11 @@ header{
     padding-top: 35px;
 }
 
+#NombreTec a{
+    color: #666;
+    text-decoration: none;
+}
+
 /* Alternative navbar */
 .alternativeNav{
     height: 35px;

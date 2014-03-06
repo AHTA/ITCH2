@@ -295,7 +295,7 @@
     <Content Include="Views\Home\_Avisos.cshtml" />
     <Content Include="Views\Home\_Servicios.cshtml" />
     <Content Include="Views\Home\_Categorias.cshtml" />
-    <Content Include="Views\Home\_SliderParallax.cshtml" />
+    <Content Include="Views\Home\_Slider.cshtml" />
     <EntityDeploy Include="Models\ChiwasEngineModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ChiwasEngineModels.Designer.cs</LastGenOutput>

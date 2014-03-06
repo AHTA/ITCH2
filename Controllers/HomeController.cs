@@ -14,6 +14,9 @@ namespace ITCH2_1.Controllers
         public ActionResult Index()
         {
             ViewBag.ServidorImagenes = ITCH2_1.Properties.Settings.Default.ServidorImagenes;
+            ViewBag.Calendario = ITCH2_1.Properties.Settings.Default.UrlCalendario;
+            ViewBag.Documentos = ITCH2_1.Properties.Settings.Default.UrlDocumentos;
+
             return View();
         }
 
