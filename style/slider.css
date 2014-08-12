@@ -1,6 +1,6 @@
 .da-slider{
 	width: 100%;
-	height: 300px;
+	height: 340px;
 	position: relative;
 	margin: 0px auto;
    	margin-bottom:20px;
@@ -15,10 +15,10 @@
 }
 .da-slide{
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 50px;
+	left: 0px;
 	text-align: left;
 }
 .da-slide-current{
@@ -52,21 +52,33 @@
 	color: #777;
 	font-size: 46px;
 	width: 50%;
-	top: 40px;
-	white-space: nowrap;
-	font-weight: 700;
+	/*white-space: nowrap;*/
+	font-weight: 300;
 }
 .da-slide p{
 	width: 45%;
 	top: 105px;
-	color: #888;
+	color: whitesmoke;
 	font-size: 15px;
 	line-height: 26px;
-	height: 80px;
+	/*height: 80px;*/
 	overflow: hidden;
 	font-weight: 400;
 	font-style: italic;
 }
+.da-slide span {
+    color: white;
+    width: 65% !important;
+    font-size: 30px;
+    /*top: 105px;
+    color: #888;
+    line-height: 26px;
+    height: 80px;
+    overflow: hidden;
+    font-weight: 400;
+    font-style: italic;*/
+}
+
 .da-slide .da-img{
 	text-align: center;
 	width: 30%;
@@ -75,22 +87,70 @@
 	line-height: 320px;
 	left: 110%; /*60%*/
 }
-.da-slide .da-link{
-	top: 200px; /*depends on p height*/
-	border-radius: 30px;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	padding:3px 15px 3px;
-	font-size: 15px;
-	line-height: 30px;
-	width: 70px;
-	text-align: center;
+.da-slide .da-link {
+    top: 200px; /*depends on p height*/
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    /*padding: 3px 15px 3px;*/
+    font-size: 10px;
+    line-height: 30px;
+    width: 350px !important;
+    height: 80px;
+    text-align: center;
+    /*padding-top: 20px;*/
 }
+.da-slider .da-box {
+        max-width: 690px;
+        display: table;
+    }
+
+        .da-slider .da-box .da-info {
+            display: block !important;
+            color: white;
+            font-size: 18px !important;
+            font-weight: 300;
+            display: table-cell;
+            min-height: 30px;
+            background-color: #A5273F;
+            margin-top: 180px;
+            margin-left: 50px;
+            padding: 15px 15px 20px 20px;
+
+            top: 200px; /*depends on p height*/
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+
+    .da-box h2 {
+        position: static;
+        color: #ffffff;
+        font-size: 20px;
+        width: 100%;
+        /*white-space: nowrap;*/
+        font-weight: 400;
+    }
+
+    .da-box p {
+        position: static;
+        color: #ffffff;
+        font-size: 15px;
+        width: 100%;
+        font-weight: 100;
+    }
+
+    .da-box a:hover, a:visited {
+        text-decoration: none;
+    }
+
 .da-slide .da-link:hover{
 	background: #777;
    text-decoration:none;
 }
+
 .da-dots{
 	width: 100%;
 	position: absolute;
@@ -211,7 +271,7 @@
 	-ms-animation: fromRightAnim2 0.6s ease-in 0.8s both;
 	animation: fromRightAnim2 0.6s ease-in 0.8s both;
 }
-.da-slide-fromright .da-link{
+.da-slide-fromright .da-info{
 	-webkit-animation: fromRightAnim3 0.4s ease-in 1.2s both;
 	-moz-animation: fromRightAnim3 0.4s ease-in 1.2s both;
 	-o-animation: fromRightAnim3 0.4s ease-in 1.2s both;
