@@ -1,20 +1,16 @@
 ﻿@using System.Configuration;
 @{
     ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
-    var paginas = db.Pages.Where
-        (pag =>
-            pag.Categories.FirstOrDefault().category_name == "Portada"
-            &&
-            pag.page_visible == true
-        )
-        .OrderByDescending(pag => pag.page_date)
-        .Take(5);
+
+    var paginas = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Portada")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(5);
 }
 
 <style>
 
-
-    
 </style>
 
 <div class="container">

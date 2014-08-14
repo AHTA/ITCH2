@@ -15,14 +15,11 @@
 
         @{
             ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
-            var paginas = db.Pages.Where
-                (pag =>
-                    pag.Categories.FirstOrDefault().category_name == "Avisos"
-                    &&
-                    pag.page_visible == true
-                )
-                .OrderByDescending(pag => pag.page_date)
-                .Take(4);
+
+            var paginas = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Avisos")
+                .Pages.Where(pagina => pagina.page_visible == true).Take(5);
+                
             int hrCount = 0;
         }
 
@@ -35,7 +32,7 @@
                 <i class="icon-exclamation-sign"></i>
             </div>
             <div class="service-content">
-                <h5>
+                <h5 style="line-height:1.1;">
                     <a href="@Url.Action("Publicacion", "Contenido", new { id = aviso.page_id })">@aviso.page_title</a></h5>
                     <span>@aviso.page_date.ToShortDateString()</span>
                 <p>@aviso.page_description</p>

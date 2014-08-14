@@ -294,7 +294,6 @@
     <Content Include="Views\Home\_Noticias.cshtml" />
     <Content Include="Views\Home\_Avisos.cshtml" />
     <Content Include="Views\Home\_Servicios.cshtml" />
-    <Content Include="Views\Home\_Categorias.cshtml" />
     <Content Include="Views\Home\_Slider.cshtml" />
     <EntityDeploy Include="Models\ChiwasEngineModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
