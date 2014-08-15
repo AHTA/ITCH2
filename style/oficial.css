@@ -237,11 +237,6 @@ header{
     min-height: 140px !important;
 }
 
-#NombreTec{
-    font-size: 18px; 
-    padding-top: 35px;
-}
-
 #NombreTec a{
     color: #666;
     text-decoration: none;
@@ -261,32 +256,30 @@ header{
 
 /* Navbar */
 
-@media (min-width: 767px){
+@media (min-width: 767px) {
 
-    .navbar{
-        
+    .navbar {
         min-height: 39px !important;
     }
 
-    .bs-docs-nav:before, 
-    .bs-docs-nav:after  
-    {
-        content: ""; display: block; 
-        height: 1px; 
-        left: 0; 
-        position: relative; 
-        width: 100%; 
+    .bs-docs-nav:before,
+    .bs-docs-nav:after {
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: relative;
+        width: 100%;
     }
 
-    #navbar
-    {
+    #navbar {
         background: url("../img/bg-01.jpg") 50% 0 repeat-y;
         max-height: 35px;
         margin-top: 1px;
         margin-bottom: 1px;
     }
 
-    nav, .navbar-nav > ul{
+    nav, .navbar-nav > ul {
         padding-left: 200px;
         max-height: 20px;
         /*margin-left: 30px;*/
@@ -296,22 +289,27 @@ header{
         /*padding-top: 8px !important;*/
     }
 
-    .navbar .nav > li > a, 
-    .navbar .nav > li > a:visited{
-	    color: #666 !important;
-	    padding: 8px 15px 15px;
-	    filter: none !important;
+    .navbar .nav > li > a,
+    .navbar .nav > li > a:visited {
+        color: #666 !important;
+        padding: 8px 15px 15px;
+        filter: none !important;
         height: 34px;
     }
 
-    .dropdown-menu a:hover, 
+    .dropdown-menu a:hover,
     .dropdown-menu a:focus {
-	    background: none !important;
+        background: none !important;
         text-decoration: underline !important;
     }
 
-    .dropdown-menu a{
+    .dropdown-menu a {
         background: #dfdfdf !important;
+    }
+
+    #NombreTec {
+        font-size: 18px;
+        padding-top: 35px;
     }
 }
 
@@ -367,11 +365,27 @@ footer .container .row .col-md-12 #logo-footer:after {
     color: #545454; 
 }
 
+@media (max-width: 995px) {
+
+    #NombreTec {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
 /* Searchform */
 @media (max-width: 767px) {
     .search-form {
         margin-top: 30px !important;
         margin-bottom: 30px !important;
+    }
+
+    #NombreTec {
+        font-size: 25px;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 }
     .search-form {
