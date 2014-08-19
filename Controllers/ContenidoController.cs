@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Net;
 
 namespace ITCH2_1.Controllers
 {
     public class ContenidoController : Controller
     {
-        //
-        // GET: /Contenido/
+        Models.Entities db = new Models.Entities();
 
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Publicacion(int id)
+        public ActionResult Publicacion(int? id)
         {
-            Models.Entities db = new Models.Entities();
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
             var model = db.Pages.FirstOrDefault(page => page.page_id == id); 
             return View(model);
         }
 
         public ActionResult Busqueda(string id)
         {
-            Models.Entities db = new Models.Entities();
             var paginas = db.Pages
                 .Where(pagina =>
                     pagina.page_visible == true)
@@ -38,7 +38,6 @@ namespace ITCH2_1.Controllers
 
             return View(paginas);
         }
-
         
         [HttpPost]
         public ActionResult Busqueda(FormCollection formcollection)
@@ -46,9 +45,16 @@ namespace ITCH2_1.Controllers
             return RedirectToAction("Busqueda", "Contenido", new { id = formcollection[0] });
         }
 
-        public ActionResult Categoria(string id)
+        public ActionResult Categoria(int? id)
         {
-            return View();
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            var paginas = db
+               .Categories.FirstOrDefault(categoria => categoria.category_id == id)
+               .Pages.Where(pagina => pagina.page_visible == true)
+               .OrderByDescending(pagina => pagina.page_date);
+
+            return View(paginas);
         }
 
     }
