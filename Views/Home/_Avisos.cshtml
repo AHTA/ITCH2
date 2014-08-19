@@ -18,7 +18,9 @@
 
             var paginas = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Avisos")
-                .Pages.Where(pagina => pagina.page_visible == true).Take(5);
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pagina => pagina.page_date)
+                .Take(5);
                 
             int hrCount = 0;
         }
