@@ -8,6 +8,7 @@
                 Ultimas noticias del Tecnol&oacute;gico.
             </div>
             <div class="dis-nav button">
+                <a href="#" id="Aspirantes">Aspirantes</a>
                 <a href="#" id="Alumnos">Alumnos</a>
                 <a href="#" id="Egresados">Egresados</a>
                 <a href="#" id="Docentes">Docentes</a>
@@ -16,6 +17,13 @@
             @{
                 ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
 
+                //Notivias de alumnos
+                var noticiasAspirantes = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Aspirantes")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
+                
                 //Notivias de alumnos
                 var noticiasAlumnos = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Alumnos")
@@ -40,7 +48,16 @@
 
 
             <div class="dis-content">
-
+                <!-- Noticias Aspirantes/ -->
+                @foreach (var alumnos in noticiasAspirantes)
+                {
+                    <div class="Aspirantes">
+                        <h3>@alumnos.page_title</h3>
+                        <p>@alumnos.page_description</p>
+                        <a href="@Url.Action("Publicacion", "Contenido", new { id = alumnos.page_id })" class="btn btn-success">Leer m&aacute;s</a>
+                    </div>
+                }
+                <!-- /Noticias Aspirantes -->
                 <!-- Noticias Alumnos/ -->
                 @foreach (var alumnos in noticiasAlumnos)
                 {
