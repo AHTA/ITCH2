@@ -23,12 +23,12 @@
                                     @Model.page_title</h2>
                                 <!-- Meta details -->
                                 <div class="meta">
-                                    <i class="icon-calendar"></i>@Model.page_date
-                                    <i class="icon-user"></i>@Model.UserProfiles.PublicUserName
+                                    <i class="icon-calendar"></i> @Model.page_date
+                                    <i class="icon-user"></i> @Model.UserProfiles.PublicUserName
                                     <i class="icon-folder-open"></i>
                                     @foreach (var item in Model.Categories)
-                                    { <a href="#">@item.category_name</a> }
-                                    <span class="pull-right">@*<i class="icon-comment"></i><a href="#">2 Comments</a></span>*@
+                                    { <a href="@Url.Action("Categoria", "Contenido", new { id = item.category_id })">@item.category_name</a> }
+                                    
                                 </div>
                                 <!-- Thumbnail -->
                                 @Html.Raw(Model.page_content)

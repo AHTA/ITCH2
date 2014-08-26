@@ -10,7 +10,7 @@
         }
         @foreach (var item in categorias)
         {
-            <li><a href="#">@item.category_name</a></li>
+            <li><a href="@Url.Action("Categoria", "Contenido", new { id = item.category_id })">@item.category_name</a></li>
         }
     </ul>
 </div>
