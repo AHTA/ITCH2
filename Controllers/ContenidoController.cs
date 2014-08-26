@@ -49,6 +49,7 @@ namespace ITCH2_1.Controllers
         {
             if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             var category = db.Categories.FirstOrDefault(item => item.category_id == id);
+            if (category == null) return HttpNotFound();
 
             ViewBag.CategoryName = category.category_name;
 
