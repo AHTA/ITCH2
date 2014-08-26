@@ -1,13 +1,11 @@
 ﻿@{
     ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
-    var paginas = db.Pages.Where
-        (pag =>
-            pag.Categories.FirstOrDefault().category_name == "Alumnos"
-            &&
-            pag.page_visible == true
-        )
-        .OrderByDescending(pag => pag.page_date)
-        .Take(2);
+
+    var paginas = db
+            .Categories.FirstOrDefault(categoria => categoria.category_name == "Alumnos")
+            .Pages.Where(pagina => pagina.page_visible == true)
+            .OrderByDescending(pag => pag.page_date)
+            .Take(2);
 }
 
 
@@ -23,16 +21,16 @@
         @foreach (var noticia in paginas)
         {
             <div class="col-md-6">
-            <blockquote>
-                <span class="color">@noticia.page_title</span>
-                <p>
-                    @noticia.page_description
-                </p>
-                <small>@noticia.UserProfiles.PublicUserName - <span class="color">@noticia.page_date</span></small>
-            </blockquote>
-        </div>
+                <blockquote>
+                    <span class="color"><a href="@Url.Action("Publicacion", "Contenido", new { id = noticia.page_id })">@noticia.page_title</a></span>
+                    <p>
+                        @noticia.page_description
+                    </p>
+                    <small>@noticia.UserProfiles.PublicUserName - <span class="color">@noticia.page_date</span></small>
+                </blockquote>
+            </div>
         }
-        
-        
+
+
     </div>
 </div>
