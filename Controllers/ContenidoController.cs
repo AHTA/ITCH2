@@ -48,6 +48,9 @@ namespace ITCH2_1.Controllers
         public ActionResult Categoria(int? id)
         {
             if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            var category = db.Categories.FirstOrDefault(item => item.category_id == id);
+
+            ViewBag.CategoryName = category.category_name;
 
             var paginas = db
                .Categories.FirstOrDefault(categoria => categoria.category_id == id)

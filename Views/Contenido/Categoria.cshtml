@@ -7,7 +7,7 @@
 <div class="content">
     <div class="container">
         <h2>Busqueda</h2>
-        <p class="big grey">Resultados de la busqueda.</p>
+        <p class="big grey">Resultados de la categor&iacute;a @ViewBag.CategoryName.</p>
         <hr>
 
         <div class="row tasks">
@@ -21,7 +21,7 @@
                             <div class="tmeta">
                                 <i class="icon-calendar"></i> @item.page_date - <i class="icon-folder-open"></i>
                                 @foreach (var categoria in item.Categories)
-                                { <a href="#">@categoria.category_name</a> } 
+                                { <a href="@Url.Action("Categoria", "Contenido", new { id = categoria.category_id })">@categoria.category_name</a> } 
                             </div>
                             <p>@item.page_description</p>
                         </div>
