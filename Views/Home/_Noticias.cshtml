@@ -49,12 +49,13 @@
 
             <div class="dis-content">
                 <!-- Noticias Aspirantes/ -->
-                @foreach (var alumnos in noticiasAspirantes)
+                @foreach (var aspirantes in noticiasAspirantes)
                 {
                     <div class="Aspirantes">
-                        <h3>@alumnos.page_title</h3>
-                        <p>@alumnos.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = alumnos.page_id })" class="btn btn-success">Leer m&aacute;s</a>
+                        <h3>@aspirantes.page_title</h3>
+                        <i>@aspirantes.page_date</i>
+                        <p>@aspirantes.page_description</p>
+                        <a href="@Url.Action("Publicacion", "Contenido", new { id = aspirantes.page_id })" class="btn btn-success">Leer m&aacute;s</a>
                     </div>
                 }
                 <!-- /Noticias Aspirantes -->
@@ -63,6 +64,7 @@
                 {
                     <div class="Alumnos">
                         <h3>@alumnos.page_title</h3>
+                        <i>@alumnos.page_date</i>
                         <p>@alumnos.page_description</p>
                         <a href="@Url.Action("Publicacion", "Contenido", new { id = alumnos.page_id })" class="btn btn-success">Leer m&aacute;s</a>
                     </div>
@@ -73,6 +75,7 @@
                 {
                     <div class="Egresados">
                         <h3>@egresados.page_title</h3>
+                        <i>@egresados.page_date</i>
                         <p>@egresados.page_description</p>
                         <a href="@Url.Action("Publicacion", "Contenido", new { id = egresados.page_id })" class="btn btn-success">Leer m&aacute;s</a>
                     </div>
@@ -83,6 +86,7 @@
                 {
                     <div class="Docentes">
                         <h3>@docentes.page_title</h3>
+                        <i>@docentes.page_date</i>
                         <p>@docentes.page_description</p>
                         <a href="@Url.Action("Publicacion", "Contenido", new { id = docentes.page_id })" class="btn btn-success">Leer m&aacute;s</a>
                     </div>
