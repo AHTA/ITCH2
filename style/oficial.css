@@ -237,7 +237,8 @@ header{
     min-height: 140px !important;
 }
 
-#NombreTec a{
+#NombreTec a
+{
     color: #666;
     text-decoration: none;
 }
@@ -306,10 +307,10 @@ header{
     .dropdown-menu a {
         background: #dfdfdf !important;
     }
-
+    /* Se cambió padding-top de 45 a 20px porque se agregó Tecnológico Nacional de México 140908 */
     #NombreTec {
         font-size: 18px;
-        padding-top: 35px;
+        padding-top: 20px;
     }
 }
 
