@@ -16,6 +16,7 @@
 
             @{
                 ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+                List<ITCH2_1.Models.Pages> listaNoticias = new List<ITCH2_1.Models.Pages>();
 
                 //Notivias de alumnos
                 var noticiasAspirantes = db
@@ -44,54 +45,30 @@
                 .Pages.Where(pagina => pagina.page_visible == true)
                 .OrderByDescending(pag => pag.page_date)
                 .Take(3);
+
+                listaNoticias.AddRange(noticiasAspirantes);
+                listaNoticias.AddRange(noticiasAlumnos);
+                listaNoticias.AddRange(noticiasEgresados);
+                listaNoticias.AddRange(noticiasDocentes);
+
+                listaNoticias = listaNoticias.Distinct().ToList();
+                
             }
 
 
             <div class="dis-content">
-                <!-- Noticias Aspirantes/ -->
-                @foreach (var aspirantes in noticiasAspirantes)
+                @foreach (var item in listaNoticias)
                 {
-                    <div class="Aspirantes">
-                        <h3>@aspirantes.page_title</h3>
-                        <i>@aspirantes.page_date</i>
-                        <p>@aspirantes.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = aspirantes.page_id })" class="btn btn-success">Leer m&aacute;s</a>
+                    string categories = "";
+                    item.Categories.ToList().ForEach(action => { categories += "" + action.category_name + " "; });
+                    
+                    <div class="@categories">
+                        <h3>@item.page_title</h3>
+                        <i>@item.page_date</i> <i>@categories</i>
+                        <p>@item.page_description</p>
+                        <a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })" class="btn btn-success">Leer m&aacute;s</a>
                     </div>
                 }
-                <!-- /Noticias Aspirantes -->
-                <!-- Noticias Alumnos/ -->
-                @foreach (var alumnos in noticiasAlumnos)
-                {
-                    <div class="Alumnos">
-                        <h3>@alumnos.page_title</h3>
-                        <i>@alumnos.page_date</i>
-                        <p>@alumnos.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = alumnos.page_id })" class="btn btn-success">Leer m&aacute;s</a>
-                    </div>
-                }
-                <!-- /Noticias Alumnos -->
-                <!-- Noticias Egresados/ -->
-                @foreach (var egresados in noticiasEgresados)
-                {
-                    <div class="Egresados">
-                        <h3>@egresados.page_title</h3>
-                        <i>@egresados.page_date</i>
-                        <p>@egresados.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = egresados.page_id })" class="btn btn-success">Leer m&aacute;s</a>
-                    </div>
-                }
-                <!-- /Noticias Egresados -->
-                <!-- Noticias Docentes/ -->
-                @foreach (var docentes in noticiasDocentes)
-                {
-                    <div class="Docentes">
-                        <h3>@docentes.page_title</h3>
-                        <i>@docentes.page_date</i>
-                        <p>@docentes.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = docentes.page_id })" class="btn btn-success">Leer m&aacute;s</a>
-                    </div>
-                }
-                <!-- /Noticias Docentes -->
             </div>
         </div>
     </div>
