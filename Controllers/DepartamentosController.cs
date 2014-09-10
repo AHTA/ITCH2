@@ -76,6 +76,11 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
+        public ActionResult DesarrolloAcademico()
+        {
+            return View();
+        }
+
 
     }
 }
