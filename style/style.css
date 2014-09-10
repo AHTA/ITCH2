@@ -774,6 +774,11 @@ position: relative;
 top: -2px;
 }
 
+.meta a:visited{
+        text-decoration: none;
+        color: #555;
+    }
+
 .blog .bthumb{
 margin:10px 0px 5px 0px;
 padding:1px;

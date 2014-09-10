@@ -1,12 +1,22 @@
 ﻿@model ITCH2_1.Models.Pages
 @{
-    ViewBag.Title = "Publicacion";
+    ViewBag.Title = Model.page_title;
 }
+
 <div class="container">
     <h2>
-        Contenido</h2>
+        @Model.page_title
+    </h2>
     <p class="big grey">
-        Publicaciones del Instituto Tecnol&oacute;gico de Chihuahua II.</p>
+        <div class="meta">
+            <i class="icon-calendar"></i> @Model.page_date
+            <i class="icon-user"></i> @Model.UserProfiles.PublicUserName
+            <i class="icon-folder-open"></i>
+            @foreach (var item in Model.Categories)
+            { <a style="text-decoration: none;" href="@Url.Action("Categoria", "Contenido", new { id = item.category_id })">@item.category_name</a> }
+
+        </div>
+    </p>
     <hr />
     <!-- Blog starts -->
     <div class="blog">
@@ -15,22 +25,12 @@
                 <!-- Blog Posts -->
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
+                        <!-- Publicacion/ -->
                         <div class="posts">
-                            <!-- Each posts should be enclosed inside "entry" class" -->
-                            <!-- Post one -->
+                            <p class="big grey">
+                                @Model.page_description
+                            </p>
                             <div class="entry">
-                                <h2>
-                                    @Model.page_title</h2>
-                                <!-- Meta details -->
-                                <div class="meta">
-                                    <i class="icon-calendar"></i> @Model.page_date
-                                    <i class="icon-user"></i> @Model.UserProfiles.PublicUserName
-                                    <i class="icon-folder-open"></i>
-                                    @foreach (var item in Model.Categories)
-                                    { <a href="@Url.Action("Categoria", "Contenido", new { id = item.category_id })">@item.category_name</a> }
-                                    
-                                </div>
-                                <!-- Thumbnail -->
                                 @Html.Raw(Model.page_content)
                             </div>
                             <div class="post-foot well">
@@ -56,30 +56,35 @@
                             <div class="clearfix">
                             </div>
                         </div>
+                        <!-- /Publicacion -->
                     </div>
                     <div class="col-md-4 col-sm-4">
+                        <!-- Sidebar/ -->
                         <div class="sidebar">
-                            <!-- Widget -->
+                            <!-- Widget/ -->
                             <div class="widget">
                                 <h4>
-                                    Busqueda</h4>
+                                    Busqueda
+                                </h4>
                                 <form class="form-inline">
-                                <div class="form-group">
-                                    <input type="text" value="" name="s" id="s" class="form-control" />
-                                </div>
-                                <button type="submit" class="btn btn-default">
-                                    Buscar</button>
+                                    <div class="form-group">
+                                        <input type="text" value="" name="s" id="s" class="form-control" />
+                                    </div>
+                                    <button type="submit" class="btn btn-default">
+                                        Buscar
+                                    </button>
                                 </form>
                             </div>
+                            <!-- /Widget -->
                             <!-- Publicaciones recientes/ -->
                             @Html.Partial("_PublicacionRecientes")
                             <!-- /Publicaciones recientes -->
-                            
                             <!-- Categorias/ -->
                             @Html.Partial("_PublicacionCategorias")
                             <!-- /Categorias -->
 
                         </div>
+                        <!-- /Sidebar -->
                     </div>
                 </div>
             </div>
