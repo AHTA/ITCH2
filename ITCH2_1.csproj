@@ -276,25 +276,18 @@
     <Content Include="Views\Docentes\Index.cshtml" />
     <Content Include="Views\Contacto\Index.cshtml" />
     <Content Include="Views\Departamentos\Index.cshtml" />
+    <Content Include="Views\Departamentos\SistemasComputacionales.cshtml" />
     <Content Include="Views\Departamentos\CienciasBasicas.cshtml" />
     <Content Include="Views\Departamentos\IngenieriaIndustrial.cshtml" />
-    <Content Include="Views\Departamentos\SistemasComputacionales.cshtml" />
     <Content Include="Views\Departamentos\CienciasEconomicoAdministrativas.cshtml" />
     <Content Include="Views\Departamentos\CienciasTierra.cshtml" />
-    <Content Include="Views\Departamentos\DivisionEstudiosProfesionales.cshtml" />
-    <Content Include="Views\Departamentos\DesarrolloAcademico.cshtml" />    
     <Content Include="Views\Departamentos\ServiciosEscolares.cshtml" />
-    <Content Include="Views\Departamentos\ActividadesExtraescolares.cshtml" />
-    <Content Include="Views\Departamentos\CentroInformacion.cshtml" />
-    <Content Include="Views\Departamentos\RecursosFinancieros.cshtml" />
-    <Content Include="Views\Departamentos\RecursosHumanos.cshtml" />
+    <Content Include="Views\Departamentos\DivisionEstudiosProfesionales.cshtml" />
     <Content Include="Views\Departamentos\GestionTecnologicaVinculacion.cshtml" />
-    <Content Include="Views\Departamentos\PlaneacionProgramacionPresupuestacion.cshtml" />
-    <Content Include="Views\Departamentos\ComunicacionYDifusion.cshtml" />
-    <Content Include="Views\Departamentos\RecursosMaterialesYServicios.cshtml" />  
-    <Content Include="Views\Departamentos\CentroDecomputo.cshtml" />
-    <Content Include="Views\Departamentos\MantenimientoDeEquipo.cshtml" />
-   
+    <Content Include="Views\Departamentos\RecursosFinancieros.cshtml" />
+    <Content Include="Views\Departamentos\CentroInformacion.cshtml" />
+    <Content Include="Views\Departamentos\Laboratorios.cshtml" />
+    <Content Include="Views\Departamentos\ActividadesExtraescolares.cshtml" />
     <Content Include="Views\Contenido\Publicacion.cshtml" />
     <Content Include="Mvc.sitemap" />
     <Content Include="Views\Home\_Secciones.cshtml" />
@@ -333,6 +326,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Views\Contenido\Categoria.cshtml" />
+    <Content Include="Views\Departamentos\DesarrolloAcademico.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

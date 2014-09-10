@@ -16,17 +16,17 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
+        public ActionResult SistemasComputacionales()
+        {
+            return View();
+        }
+
         public ActionResult CienciasBasicas()
         {
             return View();
         }
 
         public ActionResult IngenieriaIndustrial()
-        {
-            return View();
-        }
-         
-        public ActionResult SistemasComputacionales()
         {
             return View();
         }
@@ -41,37 +41,12 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
-        public ActionResult DivisionEstudiosProfesionales()
-        {
-            return View();
-        }
-
-        public ActionResult DesarrolloAcademico()
-        {
-            return View();
-        }
-
         public ActionResult ServiciosEscolares()
         {
             return View();
         }
 
-        public ActionResult ActividadesExtraescolares()
-        {
-            return View();
-        }
-
-        public ActionResult CentroInformacion()
-        {
-            return View();
-        }
-
-        public ActionResult RecursosFinancieros()
-        {
-            return View();
-        }
-
-        public ActionResult RecursosHumanos()
+        public ActionResult DivisionEstudiosProfesionales()
         {
             return View();
         }
@@ -81,32 +56,31 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
-        public ActionResult PlaneacionProgramacionPresupuestacion()
+        public ActionResult RecursosFinancieros()
         {
             return View();
         }
 
-        public ActionResult ComunicacionYDifusion()
+        public ActionResult CentroInformacion()
         {
             return View();
         }
 
-
-        public ActionResult RecursosMaterialesYServicios()
+        public ActionResult Laboratorios()
         {
             return View();
         }
 
-
-        public ActionResult CentroDeComputo()
+        public ActionResult ActividadesExtraescolares()
         {
             return View();
         }
 
-        public ActionResult MantenimientoDeEquipo()
+        public ActionResult DesarrolloAcademico()
         {
             return View();
         }
+
 
     }
 }
