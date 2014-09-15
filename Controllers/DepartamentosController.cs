@@ -66,11 +66,6 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
-        public ActionResult Laboratorios()
-        {
-            return View();
-        }
-
         public ActionResult ActividadesExtraescolares()
         {
             return View();
