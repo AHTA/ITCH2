@@ -326,6 +326,11 @@
     </None>
     <Content Include="Views\Contenido\Categoria.cshtml" />
     <Content Include="Views\Departamentos\DesarrolloAcademico.cshtml" />
+    <Content Include="Views\Departamentos\ComunicacionYDifusion.cshtml" />
+    <Content Include="Views\Departamentos\RecursosHumanos.cshtml" />
+    <Content Include="Views\Departamentos\RecursosMaterialesYServicios.cshtml" />
+    <Content Include="Views\Departamentos\CentroDeComputo.cshtml" />
+    <Content Include="Views\Departamentos\PlaneacionProgramYPresup.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
