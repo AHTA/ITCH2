@@ -127,6 +127,7 @@
     <Compile Include="Controllers\DepartamentosController.cs" />
     <Compile Include="Controllers\DocentesController.cs" />
     <Compile Include="Controllers\EgresadosController.cs" />
+    <Compile Include="Controllers\GradMinutasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -331,6 +332,7 @@
     <Content Include="Views\Departamentos\RecursosMaterialesYServicios.cshtml" />
     <Content Include="Views\Departamentos\CentroDeComputo.cshtml" />
     <Content Include="Views\Departamentos\PlaneacionProgramYPresup.cshtml" />
+    <Content Include="Views\GradMinutas\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
