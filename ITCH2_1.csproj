@@ -129,6 +129,7 @@
     <Compile Include="Controllers\EgresadosController.cs" />
     <Compile Include="Controllers\GradMinutasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SGCController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -333,6 +334,10 @@
     <Content Include="Views\Departamentos\CentroDeComputo.cshtml" />
     <Content Include="Views\Departamentos\PlaneacionProgramYPresup.cshtml" />
     <Content Include="Views\GradMinutas\Index.cshtml" />
+    <Content Include="Views\SGC\Index.cshtml" />
+    <Content Include="Views\SGC\EquidadGenero.cshtml" />
+    <Content Include="Views\SGC\Ambiental.cshtml" />
+    <Content Include="Views\SGC\Calidad.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
