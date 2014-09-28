@@ -2,10 +2,10 @@
     <div class="row">
         <div class="col-md-12">
             <h3>
-                Noticias
+                Avisos
             </h3>
             <div class="big grey">
-                Ultimas noticias del Tecnol&oacute;gico.
+                Últimos avisos del Tecnol&oacute;gico.
             </div>
             <div class="dis-nav button">
                 <a href="#" id="Aspirantes">Aspirantes</a>
@@ -18,28 +18,28 @@
                 ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
                 List<ITCH2_1.Models.Pages> listaNoticias = new List<ITCH2_1.Models.Pages>();
 
-                //Notivias de alumnos
+                //Avisos para Aspirantes
                 var noticiasAspirantes = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Aspirantes")
                 .Pages.Where(pagina => pagina.page_visible == true)
                 .OrderByDescending(pag => pag.page_date)
                 .Take(3);
                 
-                //Notivias de alumnos
+                //Avisos para Alumnos
                 var noticiasAlumnos = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Alumnos")
                 .Pages.Where(pagina => pagina.page_visible == true)
                 .OrderByDescending(pag => pag.page_date)
                 .Take(3);
 
-                //Noticias de Egresados
+                //Avisos para Egresados
                 var noticiasEgresados = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Egresados")
                 .Pages.Where(pagina => pagina.page_visible == true)
                 .OrderByDescending(pag => pag.page_date)
                 .Take(3);
 
-                //Noticias de Docentes
+                //Avisos para Docentes
                 var noticiasDocentes = db
                 .Categories.FirstOrDefault(categoria => categoria.category_name == "Docentes")
                 .Pages.Where(pagina => pagina.page_visible == true)
