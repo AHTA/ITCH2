@@ -1,52 +1,83 @@
-﻿<div class="service-three">
+﻿<div class="discover">
     <div class="row">
-        <div class="col-md-4">
-            <!-- Service title with tag -->
-            <h6 class="bold grey">
-                Todas las categorías...</h6>
+        <div class="col-md-12">
             <h3>
-                Noticias</h3>
-            <p>
-                Lo m&aacute;s importante para los usuarios de esta p&aacute;gina.</p>
-            <a href="@Url.Action("Categoria", "Contenido", new { id = 6 })">Ver todos <i class="icon-double-angle-right"></i></a>
-            <hr />
-        </div>
-        <div class="col-md-8">
+                Avisos
+            </h3>
+            <div class="big grey">
+                Ultimos avisos del Tecnol&oacute;gico.
+            </div>
+            <div class="dis-nav button">
+                <a href="#" id="Convocatorias">Convocatorias</a>
+                <a href="#" id="Aspirantes">Aspirantes</a>
+                <a href="#" id="Alumnos">Alumnos</a>
+                <a href="#" id="Egresados">Egresados</a>
+                <a href="#" id="Docentes">Docentes</a>
+            </div>
 
-        @{
-            ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+            @{
+                ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+                List<ITCH2_1.Models.Pages> listaAvisos = new List<ITCH2_1.Models.Pages>();
 
-            var paginas = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Avisos")
+                //Avisos de Convocatorias
+                var avisosConvocatorias = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Convocatorias")
                 .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pagina => pagina.page_date)
-                .Take(5);
-                
-            int hrCount = 0;
-        }
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
 
-        @foreach (var aviso in paginas)
-        {
-            hrCount++;
-                        
-            <!-- Noticia/ -->
-            <div class="service-icon gray">
-                <i class="icon-exclamation-sign"></i>
-            </div>
-            <div class="service-content">
-                <h5 style="line-height:1.1;">
-                    <a href="@Url.Action("Publicacion", "Contenido", new { id = aviso.page_id })">@aviso.page_title</a></h5>
-                    <span>@aviso.page_date.ToShortDateString()</span>
-                <p>@aviso.page_description</p>
-            </div>
-            
-            if (hrCount < 4)
-            { <hr /> }
-            
-            <!-- /Noticia -->
-        }
-            <br />
-            <div class="clearfix">
+                //Avisos de alumnos
+                var avisosAspirantes = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Aspirantes")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
+
+                //Avisos de alumnos
+                var avisosAlumnos = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Alumnos")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
+
+                //Avisos de Egresados
+                var avisosEgresados = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Egresados")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
+
+                //Avisos de Docentes
+                var avisosDocentes = db
+                .Categories.FirstOrDefault(categoria => categoria.category_name == "Docentes")
+                .Pages.Where(pagina => pagina.page_visible == true)
+                .OrderByDescending(pag => pag.page_date)
+                .Take(3);
+
+                listaAvisos.AddRange(avisosConvocatorias);
+                listaAvisos.AddRange(avisosAspirantes);
+                listaAvisos.AddRange(avisosAlumnos);
+                listaAvisos.AddRange(avisosEgresados);
+                listaAvisos.AddRange(avisosDocentes);
+
+                listaAvisos = listaAvisos.Distinct().ToList();
+
+            }
+
+
+            <div class="dis-content">
+                @foreach (var item in listaAvisos)
+                {
+                    string categories = "";
+                    item.Categories.ToList().ForEach(action => { categories += "" + action.category_name + " "; });
+
+                    <div class="@categories">
+                        <h3>@item.page_title</h3>
+                        <i>@item.page_date</i> <i>@categories</i>
+                        <p>@item.page_description</p>
+                        <a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })" class="btn btn-success">Leer m&aacute;s</a>
+                    </div>
+                }
             </div>
         </div>
     </div>
