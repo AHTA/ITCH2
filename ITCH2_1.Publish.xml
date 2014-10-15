@@ -1,195 +1,195 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\inetpub\wwwroot\ITCH2" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="ITCH2" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Views/AcercaDe/MisionVision.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="App_Data/aspnet-ChiwasEngine.mdf" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/AcercaDe/MisionVision.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="App_Data/aspnet-ChiwasEngine.mdf" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="07/09/2013 12:05:12" />
-    <file relUrl="img/photos/alumno.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Shared/WebParts/_Social.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/SGC/EquidadGenero.cshtml" publishTime="09/18/2014 12:27:11" />
-    <file relUrl="Views/Home/_Slider.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/Aspirantes.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/SGC/Index.cshtml" publishTime="09/17/2014 19:15:31" />
-    <file relUrl="Views/Docentes/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="style/flexslider.css" publishTime="09/17/2014 13:08:53" />
-    <file relUrl="style/oficial.css" publishTime="09/17/2014 13:08:53" />
-    <file relUrl="img/photos/Docentes.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/ComunicacionYDifusion.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/AcercaDe/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/SistemasComputacionales.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Home/_Servicios.cshtml" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/photos/alumno.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Shared/WebParts/_Social.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/SGC/EquidadGenero.cshtml" publishTime="09/19/2014 16:36:06" />
+    <file relUrl="Views/Home/_Slider.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/Aspirantes.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Carreras/ARQ.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/SGC/Index.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Docentes/Index.cshtml" publishTime="09/30/2014 16:01:12" />
+    <file relUrl="Views/Departamentos/PlaneacionProgramYPresup.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="style/flexslider.css" publishTime="09/19/2014 16:26:36" />
+    <file relUrl="style/oficial.css" publishTime="09/19/2014 16:26:36" />
+    <file relUrl="img/photos/Docentes.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/ComunicacionYDifusion.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/AcercaDe/Index.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/SistemasComputacionales.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Home/_Servicios.cshtml" publishTime="09/30/2014 16:00:22" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="07/08/2013 16:15:08" />
-    <file relUrl="Views/Shared/WebParts/_NavigationBar.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Home/_Noticias.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/parallax/arrows.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Carreras/II.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Web.config" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image11.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="font/trajan_pro_regular-webfont.woff" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Aspirantes/_AspirantesNoticias.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/7.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Shared/WebParts/_NavigationBar.cshtml" publishTime="09/30/2014 16:02:21" />
+    <file relUrl="Views/Home/_Noticias.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="img/parallax/arrows.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Carreras/II.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Web.config" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image11.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="font/trajan_pro_regular-webfont.woff" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Aspirantes/_AspirantesNoticias.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="img/portfolio/7.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.Razor.xml" publishTime="05/31/2012 02:00:30" />
-    <file relUrl="Views/Carreras/ARQ.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="App_Data/aspnet-ChiwasEngine_log.ldf" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="font/fontawesome-webfont.svg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="App_Data/aspnet-ChiwasEngine_log.ldf" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Net.Http.Formatting.resources.dll" publishTime="07/11/2012 00:30:26" />
-    <file relUrl="Views/Carreras/IINF.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Home/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="style/bootstrap.css" publishTime="09/17/2014 13:08:53" />
+    <file relUrl="Views/Carreras/IINF.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="style/bootstrap.css" publishTime="09/19/2014 16:26:36" />
     <file relUrl="bin/System.Net.Http.Formatting.xml" publishTime="10/01/2013 19:07:50" />
-    <file relUrl="img/parallax/3.png" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Carreras/LA.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/parallax/3.png" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.xml" publishTime="05/31/2012 02:00:30" />
-    <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="06/22/2012 02:00:28" />
-    <file relUrl="Views/Egresados/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/s1.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/RecursosFinancieros.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/sprites.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Shared/WebParts/_Header.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/border-01.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image8.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/bg-01.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/logos/logo2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/parallax/1.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Carreras/ISC.cshtml" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Egresados/Index.cshtml" publishTime="09/30/2014 15:12:46" />
+    <file relUrl="img/photos/s1.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/RecursosFinancieros.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/sprites.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/CentroInformacion.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/border-01.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image8.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/bg-01.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/logos/logo2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/parallax/1.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Carreras/ISC.cshtml" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Net.Http.Formatting.dll" publishTime="07/09/2013 12:04:28" />
     <file relUrl="bin/System.Web.Helpers.xml" publishTime="05/31/2012 02:00:30" />
-    <file relUrl="img/carreras/Image3.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/carreras/Image3.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.WebPages.xml" publishTime="05/31/2012 02:00:32" />
-    <file relUrl="Views/Shared/WebParts/_Footer.cshtml" publishTime="09/17/2014 18:57:06" />
-    <file relUrl="Views/AcercaDe/Logotipo.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Egresados/_EgresadosNoticias.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Alumnos/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/CienciasBasicas.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="font/trajan_pro_regular-webfont.ttf" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/IngenieriaIndustrial.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/jquery.prettyPhoto.js" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Shared/WebParts/_Footer.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/AcercaDe/Logotipo.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Egresados/_EgresadosNoticias.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="Views/Alumnos/Index.cshtml" publishTime="09/30/2014 15:33:29" />
+    <file relUrl="Views/Departamentos/CienciasBasicas.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="font/trajan_pro_regular-webfont.ttf" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/IngenieriaIndustrial.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/jquery.prettyPhoto.js" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="07/09/2013 12:05:12" />
-    <file relUrl="style/prettyPhoto.css" publishTime="09/17/2014 13:08:53" />
-    <file relUrl="img/photos/tn_4.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/GestionTecnologicaVinculacion.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Contacto/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/5.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Carreras/LI.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image1.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/jquery.cslider.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Carreras/IGE.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/dots.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Global.asax" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/DivisionEstudiosProfesionales.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/ActividadesExtraescolares.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image7.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Web.config" publishTime="09/17/2014 14:20:23" />
+    <file relUrl="style/prettyPhoto.css" publishTime="09/19/2014 16:26:36" />
+    <file relUrl="img/photos/tn_4.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/GestionTecnologicaVinculacion.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Contacto/Index.cshtml" publishTime="09/30/2014 10:53:23" />
+    <file relUrl="img/photos/5.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Carreras/LI.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image1.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/jquery.cslider.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Carreras/IGE.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/dots.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Global.asax" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/ActividadesExtraescolares.cshtml" publishTime="09/24/2014 12:30:00" />
+    <file relUrl="img/carreras/Image7.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Web.config" publishTime="10/01/2014 11:17:41" />
     <file relUrl="bin/es/System.Web.Helpers.resources.dll" publishTime="07/11/2012 00:31:58" />
-    <file relUrl="img/photos/s2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/easing.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image5.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/1.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/tn_1.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/RecursosHumanos.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/6.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="packages.config" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/photos/s2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/easing.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image5.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/portfolio/1.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/tn_1.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/RecursosHumanos.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/portfolio/6.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="packages.config" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Web.WebPages.Deployment.resources.dll" publishTime="07/11/2012 00:31:52" />
-    <file relUrl="img/logos/logoITCH2gris.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/GradMinutas/Index.cshtml" publishTime="09/17/2014 19:09:37" />
-    <file relUrl="Views/Contenido/Busqueda.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image9.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/PlaneacionProgramYPresup.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/jquery.flexslider-min.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/ServiciosEscolares.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/_ViewStart.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Contenido/_PublicacionRecientes.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/tn_3.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/filter.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/1.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/custom.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="bin/System.Web.Razor.dll" publishTime="07/09/2013 12:05:12" />
-    <file relUrl="Views/Departamentos/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/egresados.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/CienciasEconomicoAdministrativas.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/4.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image6.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Departamentos/CentroDeComputo.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/logos/logoITCH2gris.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/GradMinutas/Index.cshtml" publishTime="09/30/2014 10:18:12" />
+    <file relUrl="Views/Contenido/Busqueda.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image9.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/System.Net.Http.dll" publishTime="07/09/2013 12:04:48" />
+    <file relUrl="js/jquery.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/jquery.flexslider-min.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/portfolio/2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/ServiciosEscolares.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Contenido/_PublicacionRecientes.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/tn_3.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/filter.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/1.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/custom.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/Index.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/egresados.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/CienciasEconomicoAdministrativas.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/portfolio/4.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image6.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.Mvc.xml" publishTime="10/01/2013 19:07:50" />
-    <file relUrl="font/fontawesome-webfont.woff" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Contenido/Categoria.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/logos/logoSEP_hoz.png" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="font/fontawesome-webfont.woff" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Contenido/Categoria.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/logos/logoSEP_hoz.png" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Web.WebPages.Razor.resources.dll" publishTime="07/11/2012 00:31:44" />
     <file relUrl="bin/es/System.Web.Mvc.resources.dll" publishTime="07/11/2012 00:30:40" />
-    <file relUrl="js/modernizr.custom.28468.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/5.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/tn_5.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="js/modernizr.custom.28468.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/portfolio/5.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/tn_5.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Net.Http.WebRequest.xml" publishTime="10/01/2013 19:07:50" />
-    <file relUrl="Views/Departamentos/DesarrolloAcademico.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/tn_2.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/Alumnos.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/4.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="font/fontawesome-webfont.svg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Mvc.sitemap" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/line-01.gif" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/jquery.js" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Departamentos/DesarrolloAcademico.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/tn_2.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/4.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Mvc.sitemap" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/line-01.gif" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="style/font-awesome.css" publishTime="09/19/2014 16:26:36" />
     <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="05/31/2012 02:00:30" />
-    <file relUrl="Views/Departamentos/CienciasTierra.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image4.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Departamentos/CienciasTierra.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image4.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Web.Razor.resources.dll" publishTime="07/11/2012 00:31:40" />
-    <file relUrl="js/jquery.isotope.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/s3.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="js/jquery.isotope.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/s3.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/System.Web.Http.WebHost.xml" publishTime="10/01/2013 19:07:50" />
     <file relUrl="bin/System.Web.Http.WebHost.dll" publishTime="07/09/2013 12:04:28" />
-    <file relUrl="img/photos/site.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/SGC/Calidad.cshtml" publishTime="09/18/2014 13:14:58" />
+    <file relUrl="img/photos/site.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/SGC/Calidad.cshtml" publishTime="09/30/2014 10:33:08" />
     <file relUrl="bin/es/System.Web.WebPages.resources.dll" publishTime="07/11/2012 00:31:40" />
     <file relUrl="bin/es/System.Net.Http.WebRequest.resources.dll" publishTime="07/11/2012 00:31:06" />
-    <file relUrl="img/photos/aspirante.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="bin/ITCH2_1.dll" publishTime="09/17/2014 18:51:35" />
-    <file relUrl="Views/Contenido/_PublicacionCategorias.cshtml" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/photos/aspirante.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Contenido/_PublicacionCategorias.cshtml" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Web.Http.resources.dll" publishTime="07/11/2012 00:30:26" />
-    <file relUrl="img/logos/logo.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/photos/egresado.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="font/trajan_pro_regular-webfont.eot" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="js/cycle.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image12.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Carreras/LA.cshtml" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/logos/logo.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image10.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="font/trajan_pro_regular-webfont.eot" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="js/cycle.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/carreras/Image12.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/photos/egresado.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/es/System.Web.Http.WebHost.resources.dll" publishTime="07/11/2012 00:30:34" />
     <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="07/09/2013 12:05:12" />
-    <file relUrl="font/fontawesome-webfont.ttf" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="style/style.css" publishTime="09/17/2014 13:08:53" />
-    <file relUrl="Views/Home/_Secciones.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="fonts/glyphicons-halflings-regular.html" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/parallax/4.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/RecursosMaterialesYServicios.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Contenido/Publicacion.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="bin/System.Web.Http.WebHost.xml" publishTime="10/01/2013 19:07:50" />
+    <file relUrl="js/bootstrap.js" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="font/fontawesome-webfont.ttf" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="style/style.css" publishTime="09/19/2014 16:26:36" />
+    <file relUrl="Views/Home/_Secciones.cshtml" publishTime="09/30/2014 16:03:33" />
+    <file relUrl="fonts/glyphicons-halflings-regular.html" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/parallax/4.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Departamentos/RecursosMaterialesYServicios.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Contenido/Publicacion.cshtml" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/ITCH2_1.dll" publishTime="10/01/2014 11:17:21" />
     <file relUrl="bin/es/System.Net.Http.resources.dll" publishTime="07/11/2012 00:31:06" />
-    <file relUrl="bin/System.Net.Http.xml" publishTime="10/01/2013 19:07:50" />
     <file relUrl="bin/System.Web.Http.dll" publishTime="07/09/2013 12:04:28" />
-    <file relUrl="img/favicon/favicon.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/logos/sep.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Alumnos/_AlumnosNoticias.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="style/slider.css" publishTime="09/17/2014 13:08:53" />
-    <file relUrl="js/bootstrap.js" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="bin/ITCH2_1.pdb" publishTime="09/17/2014 18:51:35" />
-    <file relUrl="img/carreras/Image10.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/logos/Logo64x64.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/favicon/favicon.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/logos/sep.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Alumnos/_AlumnosNoticias.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="style/slider.css" publishTime="09/19/2014 16:26:36" />
+    <file relUrl="img/photos/Alumnos.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/ITCH2_1.pdb" publishTime="10/01/2014 11:17:21" />
+    <file relUrl="Views/Shared/WebParts/_Header.cshtml" publishTime="09/30/2014 10:18:09" />
+    <file relUrl="img/logos/Logo64x64.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Net.Http.WebRequest.dll" publishTime="07/09/2013 12:04:48" />
-    <file relUrl="img/photos/3.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/photos/3.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.Helpers.dll" publishTime="07/09/2013 12:05:10" />
-    <file relUrl="img/photos/docente.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/photos/docente.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="Views/SGC/Ambiental.cshtml" publishTime="09/18/2014 12:27:15" />
-    <file relUrl="Views/Aspirantes/Index.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/portfolio/3.jpg" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="Views/Aspirantes/Index.cshtml" publishTime="09/30/2014 14:30:17" />
+    <file relUrl="img/portfolio/3.jpg" publishTime="09/19/2014 16:26:34" />
     <file relUrl="bin/System.Web.Mvc.dll" publishTime="07/09/2013 12:04:28" />
-    <file relUrl="img/portfolio/8.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Docentes/_DocentesNoticias.cshtml" publishTime="09/17/2014 13:08:51" />
+    <file relUrl="img/portfolio/8.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Docentes/_DocentesNoticias.cshtml" publishTime="09/30/2014 16:01:57" />
     <file relUrl="bin/System.Web.Http.xml" publishTime="10/01/2013 19:07:50" />
-    <file relUrl="Views/Departamentos/CentroInformacion.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/bg_direction_nav.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/parallax/2.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Home/_Avisos.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="img/carreras/Image13.jpg" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="bin/System.Net.Http.dll" publishTime="07/09/2013 12:04:48" />
-    <file relUrl="img/border-l.png" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="Views/Departamentos/CentroDeComputo.cshtml" publishTime="09/17/2014 13:08:51" />
-    <file relUrl="style/font-awesome.css" publishTime="09/17/2014 13:08:53" />
+    <file relUrl="Views/Departamentos/DivisionEstudiosProfesionales.cshtml" publishTime="09/24/2014 12:26:57" />
+    <file relUrl="img/bg_direction_nav.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="img/parallax/2.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="Views/Home/_Avisos.cshtml" publishTime="09/30/2014 16:03:00" />
+    <file relUrl="img/carreras/Image13.jpg" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/System.Net.Http.xml" publishTime="10/01/2013 19:07:50" />
+    <file relUrl="img/border-l.png" publishTime="09/19/2014 16:26:34" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="07/09/2013 12:05:12" />
+    <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="06/22/2012 02:00:28" />
   </publishProfile>
 </publishData>
