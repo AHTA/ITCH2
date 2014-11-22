@@ -7,33 +7,55 @@
 <div class="content">
     <div class="container">
         <h2>Busqueda</h2>
-        <p class="big grey">Resultados de la categor&iacute;a @ViewBag.CategoryName.</p>
+        <p class="big grey">Resultados de la categor&iacute;a: @ViewBag.CategoryName.</p>
         <hr>
 
-        <div class="row tasks">
-            @if (Model != null || Model.Count() > 0)
-            {
-                foreach (var item in Model)
-                {
-                    <div class="col-md-12">
-                        <div class="task">
-                            <h6><a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })">@item.page_title</a></h6>
-                            <div class="tmeta">
-                                <i class="icon-calendar"></i> @item.page_date - <i class="icon-folder-open"></i>
-                                @foreach (var categoria in item.Categories)
-                                { <a href="@Url.Action("Categoria", "Contenido", new { id = categoria.category_id })">@categoria.category_name</a> } 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <!-- Resultados/ -->
+                    <div class="col-md-8 col-sm-8">
+                        <!-- Publicacion/ -->
+                        @if (Model.Count() > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <div class="task">
+                                    <h6><a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })">@item.page_title</a></h6>
+                                    <div class="tmeta">
+                                        <i class="icon-calendar"></i> @item.page_date - <i class="icon-folder-open"></i>
+                                        @foreach (var categoria in item.Categories)
+                                        { <a href="@Url.Action("Categoria", "Contenido", new { id = categoria.category_id })">@categoria.category_name</a> }
+                                    </div>
+                                    <p>@item.page_description</p>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="col-md-8">
+                                <p class="big grey">No se encontraron resultados para esta busqueda...</p>
                             </div>
-                            <p>@item.page_description</p>
+                        }
+                        <!-- /Publicacion -->
+                    </div>
+                    <!-- /Resultados -->
+                    <!-- Sidebar/ -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="sidebar" style="margin-top:0px;">
+                            <!-- Publicaciones recientes/ -->
+                            @Html.Partial("_PublicacionRecientes")
+                            <!-- /Publicaciones recientes -->
+                            <!-- Categorias/ -->
+                            @Html.Partial("_PublicacionCategorias")
+                            <!-- /Categorias -->
+
                         </div>
                     </div>
-                }
-            }
-            else
-            {
-                <div class="col-md-12">
-                    <p class="big grey">No se encontraron resultados para esta busqueda...</p>
+                    <!-- /Sidebar -->
                 </div>
-            }
+            </div>
         </div>
+
     </div>
 </div>
