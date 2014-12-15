@@ -1,0 +1,33 @@
+﻿@{
+    ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+
+    var paginas = db
+        .Categories.FirstOrDefault(categoria => categoria.category_name == "Noticias")
+        .Pages.Where(pagina => pagina.page_visible == true)
+        .OrderByDescending(pagina => pagina.page_date)
+        .Take(5);
+
+    int hrCount = 0;
+}
+
+@foreach (var aviso in paginas)
+{
+    hrCount++;
+
+            <!-- Noticia/ -->
+    <div class="service-icon gray">
+        <i class="icon-exclamation-sign"></i>
+    </div>
+    <div class="service-content">
+        <h5 style="line-height:1.1;">
+            <a href="@Url.Action("Publicacion", "Contenido", new { id = aviso.page_id })">@aviso.page_title</a>
+        </h5>
+        <span>@aviso.page_date.ToShortDateString()</span>
+        <p>@aviso.page_description</p>
+    </div>
+
+    if (hrCount < 4)
+    { <hr /> }
+
+            <!-- /Noticia -->
+}

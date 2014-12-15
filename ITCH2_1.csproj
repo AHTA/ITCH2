@@ -178,6 +178,10 @@
     <Content Include="img\photos\docente.jpg" />
     <Content Include="img\photos\egresado.jpg" />
     <Content Include="img\photos\egresados.jpg" />
+    <Content Include="img\SGC\SGA.jpg" />
+    <Content Include="img\SGC\SGC Kl.jpg" />
+    <Content Include="img\SGC\SGC.jpg" />
+    <Content Include="img\SGC\SGEG.jpg" />
     <Content Include="img\sprites.png" />
     <Content Include="fonts\glyphicons-halflings-regular.html" />
     <Content Include="font\fontawesome-webfont.svg" />
@@ -229,6 +233,15 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.prettyPhoto.js" />
     <Content Include="js\modernizr.custom.28468.js" />
+    <Content Include="pagobanco0702\.thumbs\thumb_fichaReducidaConNumeros.JPG" />
+    <Content Include="pagobanco0702\fichaReducidaConNumeros.JPG" />
+    <Content Include="pagobanco0702\pago.html" />
+    <Content Include="pagobanco0702\pagobanco.html" />
+    <Content Include="pagobanco0702\PB.html" />
+    <Content Include="pagobanco0702\PRIMER-INGRESO_2.htm" />
+    <Content Include="pagobanco0702\PRIMER-INGRESO_2_archivos\.thumbs\thumb_image001.jpg" />
+    <Content Include="pagobanco0702\PRIMER-INGRESO_2_archivos\filelist.xml" />
+    <Content Include="pagobanco0702\PRIMER-INGRESO_2_archivos\image001.jpg" />
     <Content Include="style\bootstrap.css" />
     <Content Include="style\flexslider.css" />
     <Content Include="style\font-awesome.css" />
@@ -321,6 +334,10 @@
     <Content Include="font\trajan_pro_regular-webfont.woff" />
     <Content Include="font\trajan_pro_regular-webfont.eot" />
     <Content Include="font\trajan_pro_regular-webfont.ttf" />
+    <Content Include="pagobanco0702\digitoverificador2.class" />
+    <Content Include="pagobanco0702\ORDEN_INSCRIP_AGO_DIC_07_PAG_TEC.xls" />
+    <Content Include="pagobanco0702\PRIMER-INGRESO_2.doc" />
+    <Content Include="pagobanco0702\PUBLICACION_REINSCRIPCIONES_072.doc" />
     <None Include="Properties\PublishProfiles\ITCH2 Publish.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
@@ -338,6 +355,8 @@
     <Content Include="Views\SGC\EquidadGenero.cshtml" />
     <Content Include="Views\SGC\Ambiental.cshtml" />
     <Content Include="Views\SGC\Calidad.cshtml" />
+    <Content Include="Views\Home\_AvisosList.cshtml" />
+    <Content Include="Views\Home\_NoticiasList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

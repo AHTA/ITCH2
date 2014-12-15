@@ -20,5 +20,15 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
+        public ActionResult Avisos()
+        {
+            return PartialView("_AvisosList");
+        }
+
+        public ActionResult Noticias()
+        {
+            return PartialView("_NoticiasList");
+        }
+
     }
 }

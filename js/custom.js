@@ -34,16 +34,6 @@ $('#filters a').click(function(){
   return false;
 });               
 
-/* Flex slider */
-
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      easing: "easeInOutSine",
-      directionNav: false,
-      animationSpeed: 1500,
-      slideshowSpeed: 5000
-    });
-  });
 
 /* Image block effects */
 

@@ -1,14 +1,31 @@
-﻿<div class="discover">
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+        $('#AvisosCategorias').hide();
+        $('#AvisosTitulo').hide();
+        $('#AvisosSubtitulo').hide();
+        $("#Avisos").load("/Home/Avisos", function () {
+            $('#TextoCargaAvisos').hide();
+            $('#AvisosTitulo').show('3000');
+            $('#AvisosSubtitulo').show('4000');
+            $('#AvisosCategorias').show('4000');
+        });
+    });
+</script>
+<div class="discover">
     <div class="row">
         <div class="col-md-12">
-            <h3>
+            <h3 id="AvisosTitulo">
                 Avisos Express
             </h3>
             <div>
-            <h6 class="bold grey">
-                Convocatorias y Avisos de todas las categorías.</h6>
+                <h6 id="TextoCargaAvisos" class="bold grey">
+                    Cargando avisos...
+                </h6>
+                <h6 id="AvisosSubtitulo" class="bold grey">
+                    Convocatorias y Avisos de todas las categorías.
+                </h6>
             </div>
-            <div class="dis-nav button">
+            <div id="AvisosCategorias" class="dis-nav button">
                 <a href="#" id="Convocatorias">Convocatorias</a>
                 <a href="#" id="Aspirantes">Aspirantes</a>
                 <a href="#" id="Alumnos">Alumnos</a>
@@ -16,70 +33,7 @@
                 <a href="#" id="Docentes">Personal del ITCH II</a>
             </div>
 
-            @{
-                ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
-                List<ITCH2_1.Models.Pages> listaAvisos = new List<ITCH2_1.Models.Pages>();
-
-                //Avisos de Convocatorias
-                var avisosConvocatorias = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Convocatorias")
-                .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pag => pag.page_date)
-                .Take(3);
-
-                //Avisos de alumnos
-                var avisosAspirantes = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Aspirantes")
-                .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pag => pag.page_date)
-                .Take(3);
-
-                //Avisos de alumnos
-                var avisosAlumnos = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Alumnos")
-                .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pag => pag.page_date)
-                .Take(3);
-
-                //Avisos de Egresados
-                var avisosEgresados = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Egresados")
-                .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pag => pag.page_date)
-                .Take(3);
-
-                //Avisos de Docentes
-                var avisosDocentes = db
-                .Categories.FirstOrDefault(categoria => categoria.category_name == "Docentes")
-                .Pages.Where(pagina => pagina.page_visible == true)
-                .OrderByDescending(pag => pag.page_date)
-                .Take(3);
-
-                listaAvisos.AddRange(avisosConvocatorias);
-                listaAvisos.AddRange(avisosAspirantes);
-                listaAvisos.AddRange(avisosAlumnos);
-                listaAvisos.AddRange(avisosEgresados);
-                listaAvisos.AddRange(avisosDocentes);
-
-                listaAvisos = listaAvisos.Distinct().ToList();
-
-            }
-
-
-            <div class="dis-content">
-                @foreach (var item in listaAvisos)
-                {
-                    string categories = "";
-                    item.Categories.ToList().ForEach(action => { categories += "" + action.category_name + " "; });
-
-                    <div class="@categories">
-                        <h3>@item.page_title</h3>
-                        <i>@item.page_date</i> <i>@categories</i>
-                        <p>@item.page_description</p>
-                        <a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })" class="btn btn-success">Leer m&aacute;s</a>
-                    </div>
-                }
-            </div>
+            <div id="Avisos"></div>
         </div>
     </div>
 </div>
