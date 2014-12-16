@@ -170,6 +170,7 @@
     <Content Include="img\carreras\Image9.jpg" />
     <Content Include="img\line-01.gif" />
     <Content Include="img\logos\Logo64x64.jpg" />
+    <Content Include="img\logos\logoITCH2.jpg" />
     <Content Include="img\logos\logoITCH2gris.jpg" />
     <Content Include="img\logos\logoSEP_hoz.png" />
     <Content Include="img\logos\sep.jpg" />
@@ -178,6 +179,7 @@
     <Content Include="img\photos\docente.jpg" />
     <Content Include="img\photos\egresado.jpg" />
     <Content Include="img\photos\egresados.jpg" />
+    <Content Include="img\preload.gif" />
     <Content Include="img\SGC\SGA.jpg" />
     <Content Include="img\SGC\SGC Kl.jpg" />
     <Content Include="img\SGC\SGC.jpg" />
@@ -192,7 +194,6 @@
     <Content Include="img\bg_direction_nav.png" />
     <Content Include="img\border-l.png" />
     <Content Include="img\dots.png" />
-    <Content Include="img\favicon\favicon.png" />
     <Content Include="img\parallax\1.png" />
     <Content Include="img\parallax\2.png" />
     <Content Include="img\parallax\3.png" />
@@ -258,7 +259,9 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\favicon\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
