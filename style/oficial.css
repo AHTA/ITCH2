@@ -463,3 +463,9 @@ footer .container .row .col-md-12 #logo-footer:after {
 .social-bts.smaller li a.flickr:hover { background-position: -128px -289px; }
 .social-bts.smaller li a.rss { background-position: -160px -257px; }
 .social-bts.smaller li a.rss:hover { background-position: -160px -289px; }
+
+
+/* Loading styles */
+#preloader{
+    background: url('@Url.Content("~/img/preload2.gif")') 50% 50% no-repeat; height: 50px;
+}

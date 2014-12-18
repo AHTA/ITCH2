@@ -153,6 +153,7 @@
     <Content Include="App_Data\aspnet-ChiwasEngine_log.ldf">
       <DependentUpon>aspnet-ChiwasEngine.mdf</DependentUpon>
     </Content>
+    <Content Include="img\preload2.gif" />
     <Content Include="img\bg-01.jpg" />
     <Content Include="img\border-01.png" />
     <Content Include="img\carreras\Image1.jpg" />
@@ -324,8 +325,8 @@
     <Content Include="Views\Carreras\IINF.cshtml" />
     <Content Include="Views\Carreras\II.cshtml" />
     <Content Include="Views\AcercaDe\Index.cshtml" />
-    <Content Include="Views\Contenido\_PublicacionCategorias.cshtml" />
-    <Content Include="Views\Contenido\_PublicacionRecientes.cshtml" />
+    <Content Include="Views\Contenido\_PartialCategorias.cshtml" />
+    <Content Include="Views\Contenido\_PartialUltimasPublicaciones.cshtml" />
     <Content Include="Views\AcercaDe\MisionVision.cshtml" />
     <Content Include="Views\AcercaDe\Logotipo.cshtml" />
     <Content Include="Views\Aspirantes\_AspirantesNoticias.cshtml" />
@@ -360,6 +361,8 @@
     <Content Include="Views\SGC\Calidad.cshtml" />
     <Content Include="Views\Home\_AvisosList.cshtml" />
     <Content Include="Views\Home\_NoticiasList.cshtml" />
+    <Content Include="Views\Contenido\_PartialPublicacion.cshtml" />
+    <Content Include="Views\Contenido\_PartialNavigationButtons.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

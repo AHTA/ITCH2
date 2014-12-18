@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ITCH2_1.Models.Pages>
+@if (Model != null)
+{
+    <div class="navigation button">
+        @if (ViewBag.CurrentPageId != Model.First().page_id)
+        {
+            <div class="pull-left"><a href="@Url.Action("Publicacion", "Contenido", new { id = Model.First().page_id })">« Anterior</a></div>
+        }
+        @if (ViewBag.CurrentPageId != Model.Last().page_id)
+        {
+            <div class="pull-right"><a href="@Url.Action("Publicacion", "Contenido", new { id = Model.Last().page_id })">Siguiente »</a></div>
+        }
+        <div class="clearfix"></div>
+    </div>
+}

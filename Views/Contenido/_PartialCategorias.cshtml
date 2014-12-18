@@ -1,0 +1,27 @@
+﻿@{
+    ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+    var categorias = db.Categories.OrderByDescending(item => item.category_id).ToArray();
+}
+
+<div class="home-links">
+    <div class="col">
+        <h5>Categor&iacute;as</h5>
+    </div>
+    <div class="col-l">
+        <ul>
+            @for (int i = 0; i < 5; i++)
+            {
+                <li><a href="@Url.Action("Categoria", "Contenido", new { id = categorias[i].category_id })">@categorias[i].category_name</a></li>
+            }
+        </ul>
+    </div>
+    <div class="col-r">
+        <ul>
+            @for (int i = 5; i < categorias.Length; i++)
+            {
+                <li><a href="@Url.Action("Categoria", "Contenido", new { id = categorias[i].category_id })">@categorias[i].category_name</a></li>
+            }
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</div>

@@ -20,9 +20,72 @@ namespace ITCH2_1.Controllers
         {
             if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
-            var model = db.Pages.FirstOrDefault(page => page.page_id == id); 
+            var model = db.Pages.FirstOrDefault(page => page.page_id == id && page.page_visible == true); //ELIMINAR
+
+            if (model == null) return HttpNotFound();
+
             return View(model);
         }
+
+        public ActionResult AjaxPublicacion(int? id)
+        {
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            var model = db.Pages.FirstOrDefault(page => page.page_id == id);
+            return PartialView("_PartialPublicacion", model);
+        }
+
+        public ActionResult AjaxCategorias()
+        {
+            return PartialView("_PartialCategorias");
+        }
+
+        public ActionResult AjaxUltimasPublicaciones()
+        {
+            return PartialView("_PartialUltimasPublicaciones");
+        }
+
+        public ActionResult AjaxNavigationButtons(int? id)
+        {
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            
+            List<Models.Pages> paginas = db.Pages
+                .Where(item => item.page_visible == true)
+                .OrderBy(item => item.page_date).ToList();
+
+            if (!paginas.Exists(item => item.page_id == id)) return HttpNotFound();
+
+            var model = paginas.First(item => item.page_id == id);
+            
+            List<Models.Pages> navigationPages = new List<Models.Pages>();
+            
+            navigationPages.Add(Previous(model, paginas));
+            navigationPages.Add(Next(model, paginas));
+            ViewBag.CurrentPageId = id;
+            return PartialView("_PartialNavigationButtons", navigationPages);
+        }
+
+
+        #region NavigationHelperMethods
+        public Models.Pages Next(Models.Pages current, List<Models.Pages> cityList)
+        {
+            int index = cityList.IndexOf(current);
+
+            if (index < cityList.Count - 1)
+                return cityList.ElementAt(index + 1);
+            return current;
+        }
+
+        public Models.Pages Previous(Models.Pages current, List<Models.Pages> cityList)
+        {
+            int index = cityList.IndexOf(current);
+
+            if (index >= 1)
+                return cityList.ElementAt(index - 1);
+            return current;
+        } 
+        #endregion
+
 
         public ActionResult Busqueda(string id)
         {

@@ -1,0 +1,17 @@
+﻿<div class="home-links">
+    <div class="col">
+        <h5>&Uacute;ltimas noticias</h5>
+        <ul>
+            @{
+                ITCH2_1.Models.Entities db = new ITCH2_1.Models.Entities();
+                var paginas = db.Pages.OrderByDescending(item => item.page_date).Take(5);
+            }
+            @foreach (var item in paginas)
+            {
+                <li><a href="@Url.Action("Publicacion", "Contenido", new { id = item.page_id })">@item.page_date.ToShortDateString() - @item.page_title <span>@item.page_description</span> </a></li>
+            }
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+</div>

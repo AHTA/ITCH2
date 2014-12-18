@@ -1,0 +1,39 @@
+﻿@model ITCH2_1.Models.Pages
+<h2>@Model.page_title</h2>
+<p class="big grey">@Model.page_description</p>
+
+<div class="blog">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!-- Publicacion/ -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="posts">
+
+                        <div class="entry">
+                            <!-- Meta details -->
+                            <div class="meta">
+                                <i class="icon-calendar"></i> @Model.page_date
+                                <i class="icon-user"></i> @Model.UserProfiles.PublicUserName
+                                <i class="icon-folder-open"></i>
+                                @foreach (var item in Model.Categories)
+                                { <a style="text-decoration: none;" href="@Url.Action("Categoria", "Contenido", new { id = item.category_id })">@item.category_name</a> }
+
+                            </div>
+
+                            @Html.Raw(Model.page_content)
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Publicacion -->
+
+        </div>
+    </div>
+</div>
+

@@ -755,8 +755,8 @@ color:#777;
 }
 
 .blog .meta{
-border-top:1px solid #f7f7f7;
-border-bottom:1px solid #f7f7f7;
+border-top:1px solid #e6e6e6;
+border-bottom:1px solid #e6e6e6;
 margin:8px 0px;
 padding:5px 8px;
 color:#777;
@@ -1839,6 +1839,14 @@ margin:0px;
 	color: #999;
 }
 
+.home-links a > span{
+	color: rgb(189, 188, 188);
+}
+
+.home-links span:hover{
+	color: #b92025;
+}
+
 .home-links a:hover{
 	clear: #444;
 }
@@ -2119,4 +2127,9 @@ footer .copy{
 	.dropdown-menu a{
 		border: 0px !important;
 	}
+}
+
+/* Loading styles */
+.preloader{
+    background: url('../img/preload2.gif') 50% 50% no-repeat; height: 50px;
 }
