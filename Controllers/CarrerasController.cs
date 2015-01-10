@@ -51,5 +51,14 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
+        public ActionResult MII()
+        {
+            return View();
+        }
+
+        public ActionResult MISC()
+        {
+            return View();
+        }
     }
 }

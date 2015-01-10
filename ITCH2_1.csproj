@@ -363,6 +363,8 @@
     <Content Include="Views\Home\_NoticiasList.cshtml" />
     <Content Include="Views\Contenido\_PartialPublicacion.cshtml" />
     <Content Include="Views\Contenido\_PartialNavigationButtons.cshtml" />
+    <Content Include="Views\Carreras\MISC.cshtml" />
+    <Content Include="Views\Carreras\MII.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
