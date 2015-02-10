@@ -296,7 +296,6 @@
     <Content Include="Views\Contacto\Index.cshtml" />
     <Content Include="Views\Departamentos\Index.cshtml" />
     <Content Include="Views\Departamentos\SistemasComputacionales.cshtml" />
-    <Content Include="Views\Departamentos\CienciasBasicas.cshtml" />
     <Content Include="Views\Departamentos\IngenieriaIndustrial.cshtml" />
     <Content Include="Views\Departamentos\CienciasEconomicoAdministrativas.cshtml" />
     <Content Include="Views\Departamentos\CienciasTierra.cshtml" />
@@ -365,6 +364,11 @@
     <Content Include="Views\Contenido\_PartialNavigationButtons.cshtml" />
     <Content Include="Views\Carreras\MISC.cshtml" />
     <Content Include="Views\Carreras\MII.cshtml" />
+    <Content Include="Views\Departamentos\SubdirAcad.cshtml" />
+    <Content Include="Views\Departamentos\SubdirPyV.cshtml" />
+    <Content Include="Views\Departamentos\SubdirSA.cshtml" />
+    <Content Include="Views\Departamentos\MttoDeEquipo.cshtml" />
+    <Content Include="Views\Departamentos\Direccion.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

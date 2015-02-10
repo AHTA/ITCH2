@@ -16,7 +16,25 @@ namespace ITCH2_1.Controllers
             return View();
         }
 
-       
+        public ActionResult Direccion()
+        {
+            return View();
+        }
+
+        public ActionResult SubdirAcad()
+        {
+            return View();
+        }
+
+        public ActionResult SubdirPyV()
+        {
+            return View();
+        }
+
+        public ActionResult SubdirSA()
+        {
+            return View();
+        }
 
         public ActionResult CienciasBasicas()
         {
@@ -104,7 +122,10 @@ namespace ITCH2_1.Controllers
             return View();
         }
                
-
+        public ActionResult MttoDeEquipo()
+        {
+            return View();
+        }
 
     }
 }
