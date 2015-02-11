@@ -127,9 +127,9 @@
     <Compile Include="Controllers\DepartamentosController.cs" />
     <Compile Include="Controllers\DocentesController.cs" />
     <Compile Include="Controllers\EgresadosController.cs" />
-    <Compile Include="Controllers\GradMinutasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SGCController.cs" />
+    <Compile Include="Controllers\UsoDelSitioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -270,7 +270,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\WebParts\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -369,6 +369,7 @@
     <Content Include="Views\Departamentos\SubdirSA.cshtml" />
     <Content Include="Views\Departamentos\MttoDeEquipo.cshtml" />
     <Content Include="Views\Departamentos\Direccion.cshtml" />
+    <Content Include="Views\UsoDelSitio\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
