@@ -356,10 +356,6 @@
     <Content Include="Views\Departamentos\RecursosMaterialesYServicios.cshtml" />
     <Content Include="Views\Departamentos\CentroDeComputo.cshtml" />
     <Content Include="Views\Departamentos\PlaneacionProgramYPresup.cshtml" />
-    <Content Include="Views\SGC\Index.cshtml" />
-    <Content Include="Views\SGC\EquidadGenero.cshtml" />
-    <Content Include="Views\SGC\Ambiental.cshtml" />
-    <Content Include="Views\SGC\Calidad.cshtml" />
     <Content Include="Views\Home\_AvisosList.cshtml" />
     <Content Include="Views\Home\_NoticiasList.cshtml" />
     <Content Include="Views\Contenido\_PartialPublicacion.cshtml" />
