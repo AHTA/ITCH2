@@ -120,15 +120,18 @@
   <ItemGroup>
     <Compile Include="Controllers\AcercaDeController.cs" />
     <Compile Include="Controllers\AlumnosController.cs" />
+    <Compile Include="Controllers\AmbientalController.cs" />
     <Compile Include="Controllers\AspirantesController.cs" />
+    <Compile Include="Controllers\CalidadController.cs" />
     <Compile Include="Controllers\CarrerasController.cs" />
     <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\ContenidoController.cs" />
     <Compile Include="Controllers\DepartamentosController.cs" />
     <Compile Include="Controllers\DocentesController.cs" />
     <Compile Include="Controllers\EgresadosController.cs" />
+    <Compile Include="Controllers\EquidadGeneroController.cs" />
+    <Compile Include="Controllers\GradMinutasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SGCController.cs" />
     <Compile Include="Controllers\UsoDelSitioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -353,7 +356,6 @@
     <Content Include="Views\Departamentos\RecursosMaterialesYServicios.cshtml" />
     <Content Include="Views\Departamentos\CentroDeComputo.cshtml" />
     <Content Include="Views\Departamentos\PlaneacionProgramYPresup.cshtml" />
-    <Content Include="Views\GradMinutas\Index.cshtml" />
     <Content Include="Views\SGC\Index.cshtml" />
     <Content Include="Views\SGC\EquidadGenero.cshtml" />
     <Content Include="Views\SGC\Ambiental.cshtml" />
@@ -370,6 +372,11 @@
     <Content Include="Views\Departamentos\MttoDeEquipo.cshtml" />
     <Content Include="Views\Departamentos\Direccion.cshtml" />
     <Content Include="Views\UsoDelSitio\Index.cshtml" />
+    <Content Include="Views\GradMinutas\Index.cshtml" />
+    <Content Include="Views\Ambiental\Ambiental.cshtml" />
+    <Content Include="Views\EquidadGenero\EquidadGenero.cshtml" />
+    <Content Include="Views\Calidad\Calidad.cshtml" />
+    <Content Include="Views\GradMinutas\GradMinuta.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

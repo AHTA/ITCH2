@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace ITCH2_1.Controllers
 {
-    public class GradMinutasController : Controller
+    public class CalidadController : Controller
     {
         //
-        // GET: /GradMinutas/
+        // GET: /Calidad/
 
-        public ActionResult GradMinuta()
+        public ActionResult Calidad()
         {
             return View();
         }
