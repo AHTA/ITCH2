@@ -18,7 +18,9 @@
                 @foreach (var pagina in paginas)
                 {
                 <!-- Noticia/ -->
+                <a href="@Url.Action("Publicacion", "Contenido", new { id = pagina.page_id })">
                     <div class="da-slide" style="background-image: url(@(ViewBag.ServidorImagenes + pagina.page_image))">
+                    
                         <div class="da-box autosize outerDiv da-l">
                             @**@
                             <div class="da-info">
@@ -29,6 +31,7 @@
                             </div>
                         </div>
                     </div>
+                </a>
                 <!-- /Noticia-->
                 }
 
