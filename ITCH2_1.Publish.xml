@@ -8,11 +8,9 @@
     <file relUrl="img/photos/alumno.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Shared/WebParts/_Social.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/parallax/4.png" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/SGC/EquidadGenero.cshtml" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/Home/_Slider.cshtml" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="Views/Home/_Slider.cshtml" publishTime="03/23/2015 07:27:58" />
     <file relUrl="img/photos/Aspirantes.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Carreras/ARQ.cshtml" publishTime="01/09/2015 12:39:07" />
-    <file relUrl="Views/SGC/Index.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/preload2.gif" publishTime="01/09/2015 12:39:08" />
     <file relUrl="style/flexslider.css" publishTime="01/09/2015 12:39:14" />
     <file relUrl="style/oficial.css" publishTime="01/09/2015 12:39:15" />
@@ -22,7 +20,7 @@
     <file relUrl="Views/Home/_Servicios.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="07/08/2013 16:15:08" />
     <file relUrl="Views/Shared/WebParts/_NavigationBar.cshtml" publishTime="02/09/2015 16:50:55" />
-    <file relUrl="Views/Home/_Noticias.cshtml" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="Views/Home/_Noticias.cshtml" publishTime="02/20/2015 11:17:49" />
     <file relUrl="img/parallax/arrows.png" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Carreras/II.cshtml" publishTime="01/09/2015 12:39:07" />
     <file relUrl="Views/Web.config" publishTime="01/09/2015 12:39:08" />
@@ -37,6 +35,7 @@
     <file relUrl="App_Data/aspnet-ChiwasEngine_log.ldf" publishTime="01/09/2015 12:39:07" />
     <file relUrl="Views/Carreras/IINF.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Home/_AvisosList.cshtml" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="07/09/2013 12:05:12" />
     <file relUrl="Views/Home/Index.cshtml" publishTime="02/16/2015 16:23:51" />
     <file relUrl="style/bootstrap.css" publishTime="01/09/2015 12:39:14" />
     <file relUrl="Views/AcercaDe/Index.cshtml" publishTime="01/09/2015 12:39:07" />
@@ -51,7 +50,7 @@
     <file relUrl="img/photos/s1.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/portfolio/2.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/sprites.png" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/Shared/WebParts/_Header.cshtml" publishTime="02/10/2015 17:30:57" />
+    <file relUrl="Views/Shared/WebParts/_Header.cshtml" publishTime="02/17/2015 16:23:05" />
     <file relUrl="Views/Contenido/_PartialPublicacion.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/border-01.png" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/bg-01.jpg" publishTime="01/09/2015 12:39:08" />
@@ -62,7 +61,7 @@
     <file relUrl="bin/System.Web.Helpers.xml" publishTime="05/31/2012 02:00:30" />
     <file relUrl="img/carreras/Image3.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="bin/System.Web.WebPages.xml" publishTime="05/31/2012 02:00:32" />
-    <file relUrl="Views/Shared/WebParts/_Footer.cshtml" publishTime="02/16/2015 18:06:48" />
+    <file relUrl="Views/Shared/WebParts/_Footer.cshtml" publishTime="02/16/2015 18:30:05" />
     <file relUrl="img/carreras/Image1.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/logos/logoSEP_hoz.png" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Egresados/_EgresadosNoticias.cshtml" publishTime="01/09/2015 12:39:08" />
@@ -82,7 +81,6 @@
     <file relUrl="Views/Carreras/LI.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Contenido/Publicacion.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="js/jquery.cslider.js" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/UsoDelSitio/Index.cshtml" publishTime="02/16/2015 17:10:51" />
     <file relUrl="img/photos/2.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/bg_direction_nav.png" publishTime="01/09/2015 12:39:08" />
     <file relUrl="js/jquery.js" publishTime="01/09/2015 12:39:08" />
@@ -98,7 +96,6 @@
     <file relUrl="img/photos/s2.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="js/easing.js" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/carreras/Image5.jpg" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="pagobanco0702/PRIMER-INGRESO_2.htm" publishTime="01/09/2015 12:39:13" />
     <file relUrl="img/portfolio/1.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/photos/tn_1.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="pagobanco0702/PRIMER-INGRESO_2_archivos/filelist.xml" publishTime="01/09/2015 12:39:13" />
@@ -162,7 +159,6 @@
     <file relUrl="img/photos/s3.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/carreras/Image6.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/photos/site.jpg" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/SGC/Calidad.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="bin/es/System.Web.WebPages.resources.dll" publishTime="07/11/2012 00:31:40" />
     <file relUrl="bin/es/System.Net.Http.WebRequest.resources.dll" publishTime="07/11/2012 00:31:06" />
     <file relUrl="pagobanco0702/pago.html" publishTime="01/09/2015 12:39:14" />
@@ -175,7 +171,7 @@
     <file relUrl="img/carreras/Image12.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/photos/egresado.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/photos/egresados.jpg" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="07/09/2013 12:05:12" />
+    <file relUrl="Views/UsoDelSitio/Index.cshtml" publishTime="02/16/2015 17:10:51" />
     <file relUrl="font/fontawesome-webfont.ttf" publishTime="01/09/2015 12:39:08" />
     <file relUrl="style/style.css" publishTime="01/09/2015 12:39:15" />
     <file relUrl="Views/Carreras/LA.cshtml" publishTime="02/09/2015 13:04:48" />
@@ -183,7 +179,7 @@
     <file relUrl="fonts/glyphicons-halflings-regular.html" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/SGC/SGC Kl.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Departamentos/RecursosMaterialesYServicios.cshtml" publishTime="02/09/2015 15:27:31" />
-    <file relUrl="bin/EntityFramework.dll" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="pagobanco0702/PRIMER-INGRESO_2.htm" publishTime="01/09/2015 12:39:13" />
     <file relUrl="bin/ITCH2_1.dll" publishTime="02/16/2015 18:15:14" />
     <file relUrl="bin/es/System.Net.Http.resources.dll" publishTime="07/11/2012 00:31:06" />
     <file relUrl="bin/System.Net.Http.xml" publishTime="10/01/2013 19:07:50" />
@@ -194,7 +190,7 @@
     <file relUrl="Views/Departamentos/SubdirSA.cshtml" publishTime="02/09/2015 16:13:12" />
     <file relUrl="img/SGC/SGEG.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="js/bootstrap.js" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="bin/ITCH2_1.pdb" publishTime="02/16/2015 18:15:13" />
+    <file relUrl="bin/ITCH2_1.pdb" publishTime="03/21/2015 16:25:14" />
     <file relUrl="Views/Calidad/Calidad.cshtml" publishTime="02/16/2015 18:15:06" />
     <file relUrl="img/carreras/Image10.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/logos/Logo64x64.jpg" publishTime="01/09/2015 12:39:08" />
@@ -202,9 +198,10 @@
     <file relUrl="img/photos/3.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="bin/System.Web.Helpers.dll" publishTime="07/09/2013 12:05:10" />
     <file relUrl="Views/GradMinutas/GradMinuta.cshtml" publishTime="02/16/2015 18:15:06" />
-    <file relUrl="Views/SGC/Ambiental.cshtml" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="img/portfolio/8.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="Views/Aspirantes/Index.cshtml" publishTime="02/10/2015 16:43:43" />
     <file relUrl="img/portfolio/3.jpg" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="01/09/2015 12:39:08" />
     <file relUrl="pagobanco0702/.thumbs/thumb_fichaReducidaConNumeros.JPG" publishTime="01/09/2015 12:39:12" />
     <file relUrl="Views/Docentes/_DocentesNoticias.cshtml" publishTime="01/09/2015 12:39:08" />
     <file relUrl="js/jquery.isotope.js" publishTime="01/09/2015 12:39:08" />
@@ -214,8 +211,7 @@
     <file relUrl="Views/AcercaDe/Logotipo.cshtml" publishTime="01/09/2015 12:39:07" />
     <file relUrl="img/parallax/2.png" publishTime="01/09/2015 12:39:08" />
     <file relUrl="img/logos/logoITCH2.jpg" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="Views/Home/_Avisos.cshtml" publishTime="01/09/2015 12:39:08" />
-    <file relUrl="img/portfolio/8.jpg" publishTime="01/09/2015 12:39:08" />
+    <file relUrl="Views/Home/_Avisos.cshtml" publishTime="02/17/2015 17:13:23" />
     <file relUrl="img/carreras/Image13.jpg" publishTime="01/09/2015 12:39:08" />
     <file relUrl="bin/System.Net.Http.dll" publishTime="07/10/2012 12:07:38" />
     <file relUrl="img/border-l.png" publishTime="01/09/2015 12:39:08" />
